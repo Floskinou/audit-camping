@@ -1,0 +1,2832 @@
+[
+  {
+    "row": 2,
+    "name": "CAMPING  LE TRIANON",
+    "city": "OLONNE-SUR-MER",
+    "postal_code": "85340",
+    "source_url": "http://www.ms-vacances.com/location-camping-club-vacances/camping-les-sables-d-olonne-le-trianon/",
+    "browse_url": "http://www.ms-vacances.com/location-camping-club-vacances/camping-les-sables-d-olonne-le-trianon/",
+    "host": "www.ms-vacances.com",
+    "slug": "002-camping-le-trianon"
+  },
+  {
+    "row": 3,
+    "name": "CAMPING ACAPULCO",
+    "city": "SAINT-JEAN-DE-MONTS",
+    "postal_code": "85160",
+    "source_url": "https://www.camping-acapulco.net/",
+    "browse_url": "https://www.camping-acapulco.net/",
+    "host": "www.camping-acapulco.net",
+    "slug": "003-camping-acapulco"
+  },
+  {
+    "row": 4,
+    "name": "CAMPING AFMS LA FORGE DE SAINTE-MARIE",
+    "city": "THONNANCE-LES-MOULINS",
+    "postal_code": "52230",
+    "source_url": "http://www.laforgedesaintemarie.com/",
+    "browse_url": "http://www.laforgedesaintemarie.com/",
+    "host": "www.laforgedesaintemarie.com",
+    "slug": "004-camping-afms-la-forge-de-sainte-marie"
+  },
+  {
+    "row": 5,
+    "name": "CAMPING AIROTEL L'OCÉAN",
+    "city": "LACANAU",
+    "postal_code": "33680",
+    "source_url": "http://www.airotel-ocean.com/",
+    "browse_url": "http://www.airotel-ocean.com/",
+    "host": "www.airotel-ocean.com",
+    "slug": "005-camping-airotel-l-ocean"
+  },
+  {
+    "row": 6,
+    "name": "CAMPING AL SOL",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "http://campingalsol.com/",
+    "browse_url": "http://campingalsol.com/",
+    "host": "campingalsol.com",
+    "slug": "006-camping-al-sol"
+  },
+  {
+    "row": 7,
+    "name": "CAMPING ALOHA",
+    "city": "SÉRIGNAN",
+    "postal_code": "34410",
+    "source_url": "http://www.alohacamping.com",
+    "browse_url": "http://www.alohacamping.com",
+    "host": "www.alohacamping.com",
+    "slug": "007-camping-aloha"
+  },
+  {
+    "row": 8,
+    "name": "CAMPING ALOHA 2",
+    "city": "SÉRIGNAN",
+    "postal_code": "34410",
+    "source_url": "http://www.alohacamping.com",
+    "browse_url": "http://www.alohacamping.com",
+    "host": "www.alohacamping.com",
+    "slug": "008-camping-aloha-2"
+  },
+  {
+    "row": 9,
+    "name": "CAMPING ALUNA VACANCES",
+    "city": "RUOMS",
+    "postal_code": "07120",
+    "source_url": "www.alunavacances.fr",
+    "browse_url": "https://www.alunavacances.fr",
+    "host": "www.alunavacances.fr",
+    "slug": "009-camping-aluna-vacances"
+  },
+  {
+    "row": 10,
+    "name": "CAMPING ARINELLA BIANCA",
+    "city": "GHISONACCIA",
+    "postal_code": "20240",
+    "source_url": "https://www.camping-corse.fr/",
+    "browse_url": "https://www.camping-corse.fr/",
+    "host": "www.camping-corse.fr",
+    "slug": "010-camping-arinella-bianca"
+  },
+  {
+    "row": 11,
+    "name": "CAMPING ARMOR HÉOL",
+    "city": "PIRIAC-SUR-MER",
+    "postal_code": "44420",
+    "source_url": "https://www.capfun.com/camping-france-pays_de_la_loire-armor_heol-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-pays_de_la_loire-armor_heol-FR.html",
+    "host": "www.capfun.com",
+    "slug": "011-camping-armor-heol"
+  },
+  {
+    "row": 12,
+    "name": "CAMPING ATLANTIQUE PARC",
+    "city": "LES MATHES",
+    "postal_code": "17570",
+    "source_url": "https://www.capfun.com/camping-france-poitou_charentes-atlantique_parc-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-poitou_charentes-atlantique_parc-FR.html",
+    "host": "www.capfun.com",
+    "slug": "012-camping-atlantique-parc"
+  },
+  {
+    "row": 13,
+    "name": "CAMPING AU LAC DE PARENTIS BISCARROSSE",
+    "city": "PARENTIS-EN-BORN",
+    "postal_code": "40160",
+    "source_url": "https://camping-lac-de-biscarrosse.com/fr/",
+    "browse_url": "https://camping-lac-de-biscarrosse.com/fr/",
+    "host": "camping-lac-de-biscarrosse.com",
+    "slug": "013-camping-au-lac-de-parentis-biscarrosse"
+  },
+  {
+    "row": 14,
+    "name": "CAMPING BEACH GARDEN LES MÉDITERRANÉES",
+    "city": "MARSEILLAN",
+    "postal_code": "34340",
+    "source_url": "https://www.lesmediterranees.com/camping-beach-garden-marseillan-plage",
+    "browse_url": "https://www.lesmediterranees.com/camping-beach-garden-marseillan-plage",
+    "host": "www.lesmediterranees.com",
+    "slug": "014-camping-beach-garden-les-mediterranees"
+  },
+  {
+    "row": 15,
+    "name": "CAMPING BEAUREGARD",
+    "city": "MORNAS",
+    "postal_code": "84550",
+    "source_url": "https://www.capfun.com/camping-france-provence_alpes_cote_d_azur-beauregard-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-provence_alpes_cote_d_azur-beauregard-FR.html",
+    "host": "www.capfun.com",
+    "slug": "015-camping-beauregard"
+  },
+  {
+    "row": 16,
+    "name": "CAMPING BELLE DUNE",
+    "city": "BERCK",
+    "postal_code": "62600",
+    "source_url": "https://camping-belledune.com/",
+    "browse_url": "https://camping-belledune.com/",
+    "host": "camping-belledune.com",
+    "slug": "016-camping-belle-dune"
+  },
+  {
+    "row": 17,
+    "name": "CAMPING BLUE BAYOU",
+    "city": "VALRAS-PLAGE",
+    "postal_code": "34350",
+    "source_url": "https://www.sandaya.fr/Camping/France/Languedoc/Blue-Bayou/",
+    "browse_url": "https://www.sandaya.fr/Camping/France/Languedoc/Blue-Bayou/",
+    "host": "www.sandaya.fr",
+    "slug": "017-camping-blue-bayou"
+  },
+  {
+    "row": 18,
+    "name": "CAMPING BOIS DE VALMARIE",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.camping-lasirene.fr/camping-le-bois-de-valmarie/",
+    "browse_url": "https://www.camping-lasirene.fr/camping-le-bois-de-valmarie/",
+    "host": "www.camping-lasirene.fr",
+    "slug": "018-camping-bois-de-valmarie"
+  },
+  {
+    "row": 19,
+    "name": "CAMPING BOIS ET MARAIS",
+    "city": "TOUFFRÉVILLE",
+    "postal_code": "14940",
+    "source_url": "https://www.camping-boisetmarais.com/",
+    "browse_url": "https://www.camping-boisetmarais.com/",
+    "host": "www.camping-boisetmarais.com",
+    "slug": "019-camping-bois-et-marais"
+  },
+  {
+    "row": 20,
+    "name": "CAMPING BOIS SOLEIL",
+    "city": "SAINT-GEORGES-DE-DIDONNE",
+    "postal_code": "17110",
+    "source_url": "http://www.bois-soleil.com",
+    "browse_url": "http://www.bois-soleil.com",
+    "host": "www.bois-soleil.com",
+    "slug": "020-camping-bois-soleil"
+  },
+  {
+    "row": 21,
+    "name": "CAMPING CALA GOGO",
+    "city": "SAINT-CYPRIEN",
+    "postal_code": "66750",
+    "source_url": "http://www.camping-le-calagogo.fr/",
+    "browse_url": "http://www.camping-le-calagogo.fr/",
+    "host": "www.camping-le-calagogo.fr",
+    "slug": "021-camping-cala-gogo"
+  },
+  {
+    "row": 22,
+    "name": "CAMPING CAMP DU DOMAINE",
+    "city": "BORMES-LES-MIMOSAS",
+    "postal_code": "83230",
+    "source_url": "https://www.campdudomaine.com/",
+    "browse_url": "https://www.campdudomaine.com/",
+    "host": "www.campdudomaine.com",
+    "slug": "022-camping-camp-du-domaine"
+  },
+  {
+    "row": 23,
+    "name": "CAMPING CAMPÉOLE MÉDOC-PLAGE",
+    "city": "VENDAYS-MONTALIVET",
+    "postal_code": "33930",
+    "source_url": "https://www.ms-vacances.com/camping-campeole/camping-medoc-plage/decouvrir-le-camping/",
+    "browse_url": "https://www.ms-vacances.com/camping-campeole/camping-medoc-plage/decouvrir-le-camping/",
+    "host": "www.ms-vacances.com",
+    "slug": "023-camping-campeole-medoc-plage"
+  },
+  {
+    "row": 24,
+    "name": "CAMPING CAPFUN LA LOUBINE",
+    "city": "OLONNE-SUR-MER",
+    "postal_code": "85340",
+    "source_url": "https://www.capfun.com/camping-france-pays_de_la_loire-loubine-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-pays_de_la_loire-loubine-FR.html",
+    "host": "www.capfun.com",
+    "slug": "024-camping-capfun-la-loubine"
+  },
+  {
+    "row": 25,
+    "name": "CAMPING CAPFUN LAND'ISLAND",
+    "city": "MOLIETS-ET-MAA",
+    "postal_code": "40660",
+    "source_url": "https://www.camping-landisland.fr/",
+    "browse_url": "https://www.camping-landisland.fr/",
+    "host": "www.camping-landisland.fr",
+    "slug": "025-camping-capfun-land-island"
+  },
+  {
+    "row": 26,
+    "name": "CAMPING CARAVANING DE SALVERTE",
+    "city": "LA NEUVILLE-DU-BOSC",
+    "postal_code": "27890",
+    "source_url": "https://www.campingsalverte.com/",
+    "browse_url": "https://www.campingsalverte.com/",
+    "host": "www.campingsalverte.com",
+    "slug": "026-camping-caravaning-de-salverte"
+  },
+  {
+    "row": 27,
+    "name": "CAMPING CASTEL DE CHANTELOUP",
+    "city": "SILLÉ-LE-PHILIPPE",
+    "postal_code": "72460",
+    "source_url": "http://chateau-de-chanteloup.com",
+    "browse_url": "http://chateau-de-chanteloup.com",
+    "host": "chateau-de-chanteloup.com",
+    "slug": "027-camping-castel-de-chanteloup"
+  },
+  {
+    "row": 28,
+    "name": "CAMPING CASTEL LA GARANGEOIRE",
+    "city": "SAINT-JULIEN-DES-LANDES",
+    "postal_code": "85150",
+    "source_url": "https://www.camping-la-garangeoire.com/",
+    "browse_url": "https://www.camping-la-garangeoire.com/",
+    "host": "www.camping-la-garangeoire.com",
+    "slug": "028-camping-castel-la-garangeoire"
+  },
+  {
+    "row": 29,
+    "name": "CAMPING CASTEL LE DOMAINE DE DRANCOURT",
+    "city": "ESTRÉBŒUF",
+    "postal_code": "80230",
+    "source_url": "https://www.chateau-drancourt.fr/fr",
+    "browse_url": "https://www.chateau-drancourt.fr/fr",
+    "host": "www.chateau-drancourt.fr",
+    "slug": "029-camping-castel-le-domaine-de-drancourt"
+  },
+  {
+    "row": 30,
+    "name": "CAMPING CHARLEMAGNE LES MÉDITERRANÉES",
+    "city": "MARSEILLAN",
+    "postal_code": "34340",
+    "source_url": "https://www.lesmediterranees.com/bienvenue-au-camping-beach-club-charlemagne",
+    "browse_url": "https://www.lesmediterranees.com/bienvenue-au-camping-beach-club-charlemagne",
+    "host": "www.lesmediterranees.com",
+    "slug": "030-camping-charlemagne-les-mediterranees"
+  },
+  {
+    "row": 31,
+    "name": "CAMPING CHÂTEAU DE BOISSON",
+    "city": "ALLÈGRE-LES-FUMADES",
+    "postal_code": "30500",
+    "source_url": "https://www.chateaudeboisson.com/",
+    "browse_url": "https://www.chateaudeboisson.com/",
+    "host": "www.chateaudeboisson.com",
+    "slug": "031-camping-chateau-de-boisson"
+  },
+  {
+    "row": 32,
+    "name": "CAMPING CHÂTEAU DE LEZ-EAUX",
+    "city": "SAINT-AUBIN-DES-PRÉAUX",
+    "postal_code": "50380",
+    "source_url": "https://www.lez-eaux.com/",
+    "browse_url": "https://www.lez-eaux.com/",
+    "host": "www.lez-eaux.com",
+    "slug": "032-camping-chateau-de-lez-eaux"
+  },
+  {
+    "row": 33,
+    "name": "CAMPING CHÂTEAU DE L’ÉPERVIÈRE",
+    "city": "GIGNY-SUR-SAÔNE",
+    "postal_code": "71240",
+    "source_url": "http://www.domaine-eperviere.com",
+    "browse_url": "http://www.domaine-eperviere.com",
+    "host": "www.domaine-eperviere.com",
+    "slug": "033-camping-chateau-de-leperviere"
+  },
+  {
+    "row": 34,
+    "name": "CAMPING CHÂTEAU DES MARAIS",
+    "city": "MUIDES-SUR-LOIRE",
+    "postal_code": "41500",
+    "source_url": "https://www.sandaya.fr/nos-campings/chateau-des-marais",
+    "browse_url": "https://www.sandaya.fr/nos-campings/chateau-des-marais",
+    "host": "www.sandaya.fr",
+    "slug": "034-camping-chateau-des-marais"
+  },
+  {
+    "row": 35,
+    "name": "CAMPING CLUB COLOMBIER",
+    "city": "FRÉJUS",
+    "postal_code": "83600",
+    "source_url": "https://www.domaine-du-colombier.com",
+    "browse_url": "https://www.domaine-du-colombier.com",
+    "host": "www.domaine-du-colombier.com",
+    "slug": "035-camping-club-colombier"
+  },
+  {
+    "row": 36,
+    "name": "CAMPING CLUB LA CÔTE SAUVAGE",
+    "city": "LES MATHES",
+    "postal_code": "17570",
+    "source_url": "https://www.ms-vacances.com/campings-clubs-ms/la-cote-sauvage/le-club/",
+    "browse_url": "https://www.ms-vacances.com/campings-clubs-ms/la-cote-sauvage/le-club/",
+    "host": "www.ms-vacances.com",
+    "slug": "036-camping-club-la-cote-sauvage"
+  },
+  {
+    "row": 37,
+    "name": "CAMPING CLUB LE LITTORAL",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.ms-vacances.com/camping-club-ms/camping-club-le-littoral/decouvrir-le-club/",
+    "browse_url": "https://www.ms-vacances.com/camping-club-ms/camping-club-le-littoral/decouvrir-le-club/",
+    "host": "www.ms-vacances.com",
+    "slug": "037-camping-club-le-littoral"
+  },
+  {
+    "row": 38,
+    "name": "CAMPING CLUB LE MARISOL",
+    "city": "TORREILLES",
+    "postal_code": "66440",
+    "source_url": "https://siblu.fr/camping/france/mediterranee/occitanie/marisol",
+    "browse_url": "https://siblu.fr/camping/france/mediterranee/occitanie/marisol",
+    "host": "siblu.fr",
+    "slug": "038-camping-club-le-marisol"
+  },
+  {
+    "row": 39,
+    "name": "CAMPING CLUB LES BRUNELLES",
+    "city": "LONGEVILLE-SUR-MER",
+    "postal_code": "85560",
+    "source_url": "https://www.ms-vacances.com/camping-club-ms/camping-club-les-brunelles/decouvrir-le-club/",
+    "browse_url": "https://www.ms-vacances.com/camping-club-ms/camping-club-les-brunelles/decouvrir-le-club/",
+    "host": "www.ms-vacances.com",
+    "slug": "039-camping-club-les-brunelles"
+  },
+  {
+    "row": 40,
+    "name": "CAMPING CLUB LES TAMARIS",
+    "city": "LE BARCARÈS",
+    "postal_code": "66420",
+    "source_url": "https://www.ms-vacances.com/camping-club-ms/camping-club-les-tamaris/decouvrir-le-club/",
+    "browse_url": "https://www.ms-vacances.com/camping-club-ms/camping-club-les-tamaris/decouvrir-le-club/",
+    "host": "www.ms-vacances.com",
+    "slug": "040-camping-club-les-tamaris"
+  },
+  {
+    "row": 41,
+    "name": "CAMPING CLUB VERÉBLEU",
+    "city": "SAINT-GEORGES-D'OLÉRON",
+    "postal_code": "17190",
+    "source_url": "http://www.campingverebleu.com",
+    "browse_url": "http://www.campingverebleu.com",
+    "host": "www.campingverebleu.com",
+    "slug": "041-camping-club-verebleu"
+  },
+  {
+    "row": 42,
+    "name": "CAMPING CROS DE MOUTON",
+    "city": "CAVALAIRE-SUR-MER",
+    "postal_code": "83240",
+    "source_url": "https://www.crosdemouton.com/fr/",
+    "browse_url": "https://www.crosdemouton.com/fr/",
+    "host": "www.crosdemouton.com",
+    "slug": "042-camping-cros-de-mouton"
+  },
+  {
+    "row": 43,
+    "name": "CAMPING DE DOMAINE SOLEIL PLAGE",
+    "city": "VITRAC",
+    "postal_code": "24200",
+    "source_url": "https://www.homair.com/camping/domaine-de-soleil-plage",
+    "browse_url": "https://www.homair.com/camping/domaine-de-soleil-plage",
+    "host": "www.homair.com",
+    "slug": "043-camping-de-domaine-soleil-plage"
+  },
+  {
+    "row": 44,
+    "name": "CAMPING DE L'ARCHE",
+    "city": "ANDUZE",
+    "postal_code": "30140",
+    "source_url": "http://www.camping-arche.fr/",
+    "browse_url": "http://www.camping-arche.fr/",
+    "host": "www.camping-arche.fr",
+    "slug": "044-camping-de-l-arche"
+  },
+  {
+    "row": 45,
+    "name": "CAMPING DE L'ATLANTIQUE",
+    "city": "FOUESNANT",
+    "postal_code": "29170",
+    "source_url": "http://www.latlantique.fr",
+    "browse_url": "http://www.latlantique.fr",
+    "host": "www.latlantique.fr",
+    "slug": "045-camping-de-l-atlantique"
+  },
+  {
+    "row": 46,
+    "name": "CAMPING DE L'OCÉAN",
+    "city": "BREM-SUR-MER",
+    "postal_code": "85470",
+    "source_url": "https://www.campingdelocean.fr/",
+    "browse_url": "https://www.campingdelocean.fr/",
+    "host": "www.campingdelocean.fr",
+    "slug": "046-camping-de-l-ocean"
+  },
+  {
+    "row": 47,
+    "name": "CAMPING DE L'OCÉAN",
+    "city": "LA COUARDE-SUR-MER",
+    "postal_code": "17670",
+    "source_url": "http://www.campingocean.com",
+    "browse_url": "http://www.campingocean.com",
+    "host": "www.campingocean.com",
+    "slug": "047-camping-de-l-ocean"
+  },
+  {
+    "row": 48,
+    "name": "CAMPING DE L'OCÉAN",
+    "city": "LE CROISIC",
+    "postal_code": "44490",
+    "source_url": "https://www.nae-vacances.com/",
+    "browse_url": "https://www.nae-vacances.com/",
+    "host": "www.nae-vacances.com",
+    "slug": "048-camping-de-l-ocean"
+  },
+  {
+    "row": 49,
+    "name": "CAMPING DE LA BAUME",
+    "city": "FRÉJUS",
+    "postal_code": "83600",
+    "source_url": "http://labaume-lapalmeraie.com",
+    "browse_url": "http://labaume-lapalmeraie.com",
+    "host": "labaume-lapalmeraie.com",
+    "slug": "049-camping-de-la-baume"
+  },
+  {
+    "row": 50,
+    "name": "CAMPING DE LA BIEN ASSISE",
+    "city": "GUÎNES",
+    "postal_code": "62340",
+    "source_url": "https://www.camping-la-bien-assise.com/fr/",
+    "browse_url": "https://www.camping-la-bien-assise.com/fr/",
+    "host": "www.camping-la-bien-assise.com",
+    "slug": "050-camping-de-la-bien-assise"
+  },
+  {
+    "row": 51,
+    "name": "CAMPING DE LA CLAPE",
+    "city": "AGDE",
+    "postal_code": "34300",
+    "source_url": "https://camping-laclape.com/",
+    "browse_url": "https://camping-laclape.com/",
+    "host": "camping-laclape.com",
+    "slug": "051-camping-de-la-clape"
+  },
+  {
+    "row": 52,
+    "name": "CAMPING DE LA CÔTE D'ARGENT",
+    "city": "HOURTIN",
+    "postal_code": "33990",
+    "source_url": "https://www.camping-cote-dargent.com/",
+    "browse_url": "https://www.camping-cote-dargent.com/",
+    "host": "www.camping-cote-dargent.com",
+    "slug": "052-camping-de-la-cote-d-argent"
+  },
+  {
+    "row": 53,
+    "name": "CAMPING DE LA CÔTE DE NACRE SANDAYA",
+    "city": "SAINT-AUBIN-SUR-MER",
+    "postal_code": "14750",
+    "source_url": "https://www.sandaya.fr/nos-campings/cote-de-nacre",
+    "browse_url": "https://www.sandaya.fr/nos-campings/cote-de-nacre",
+    "host": "www.sandaya.fr",
+    "slug": "053-camping-de-la-cote-de-nacre-sandaya"
+  },
+  {
+    "row": 54,
+    "name": "CAMPING DE LA RIVE",
+    "city": "BISCARROSSE",
+    "postal_code": "40600",
+    "source_url": "http://larive.fr",
+    "browse_url": "http://larive.fr",
+    "host": "larive.fr",
+    "slug": "054-camping-de-la-rive"
+  },
+  {
+    "row": 55,
+    "name": "CAMPING DES DEUX PLAGES",
+    "city": "SAINT-PALAIS-SUR-MER",
+    "postal_code": "17420",
+    "source_url": "https://www.campingdes2plages.fr/",
+    "browse_url": "https://www.campingdes2plages.fr/",
+    "host": "www.campingdes2plages.fr",
+    "slug": "055-camping-des-deux-plages"
+  },
+  {
+    "row": 56,
+    "name": "CAMPING DES MENHIRS",
+    "city": "CARNAC",
+    "postal_code": "56340",
+    "source_url": "https://www.homair.com/camping/les-menhirs",
+    "browse_url": "https://www.homair.com/camping/les-menhirs",
+    "host": "www.homair.com",
+    "slug": "056-camping-des-menhirs"
+  },
+  {
+    "row": 57,
+    "name": "CAMPING DES ÎLES",
+    "city": "PÉNESTIN",
+    "postal_code": "56760",
+    "source_url": "https://www.chadotel.com/camping-les-iles-penestin/",
+    "browse_url": "https://www.chadotel.com/camping-les-iles-penestin/",
+    "host": "www.chadotel.com",
+    "slug": "057-camping-des-iles"
+  },
+  {
+    "row": 58,
+    "name": "CAMPING DOMAINE DE FÉERIX",
+    "city": "MARSEILLAN",
+    "postal_code": "34340",
+    "source_url": "https://www.capfun.com/camping-france-languedoc_roussillon-feerix-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-languedoc_roussillon-feerix-FR.html",
+    "host": "www.capfun.com",
+    "slug": "058-camping-domaine-de-feerix"
+  },
+  {
+    "row": 59,
+    "name": "CAMPING DOMAINE DE KERVEL",
+    "city": "PLONÉVEZ-PORZAY",
+    "postal_code": "29550",
+    "source_url": "https://www.capfun.com/camping-france-bretagne-kervel-FR.html?referer=23209",
+    "browse_url": "https://www.capfun.com/camping-france-bretagne-kervel-FR.html?referer=23209",
+    "host": "www.capfun.com",
+    "slug": "059-camping-domaine-de-kervel"
+  },
+  {
+    "row": 60,
+    "name": "CAMPING DOMAINE DE LA BRÈCHE",
+    "city": "VARENNES-SUR-LOIRE",
+    "postal_code": "49730",
+    "source_url": "https://www.homair.com/camping/le-domaine-de-la-breche",
+    "browse_url": "https://www.homair.com/camping/le-domaine-de-la-breche",
+    "host": "www.homair.com",
+    "slug": "060-camping-domaine-de-la-breche"
+  },
+  {
+    "row": 61,
+    "name": "CAMPING DOMAINE DE LA DRAGONNIÈRE",
+    "city": "VIAS",
+    "postal_code": "34450",
+    "source_url": "https://www.sandaya.fr/nos-campings/domaine-de-la-dragonniere",
+    "browse_url": "https://www.sandaya.fr/nos-campings/domaine-de-la-dragonniere",
+    "host": "www.sandaya.fr",
+    "slug": "061-camping-domaine-de-la-dragonniere"
+  },
+  {
+    "row": 62,
+    "name": "CAMPING DOMAINE DE LA PLAGE",
+    "city": "MEYRAS",
+    "postal_code": "07380",
+    "source_url": "http://www.domainedelaplage.com",
+    "browse_url": "http://www.domainedelaplage.com",
+    "host": "www.domainedelaplage.com",
+    "slug": "062-camping-domaine-de-la-plage"
+  },
+  {
+    "row": 63,
+    "name": "CAMPING DOMAINE DE LA SOUBEYRANNE",
+    "city": "SERNHAC",
+    "postal_code": "30210",
+    "source_url": "https://www.soubeyranne.com/",
+    "browse_url": "https://www.soubeyranne.com/",
+    "host": "www.soubeyranne.com",
+    "slug": "063-camping-domaine-de-la-soubeyranne"
+  },
+  {
+    "row": 64,
+    "name": "CAMPING DOMAINE DE LILA",
+    "city": "LINXE",
+    "postal_code": "40260",
+    "source_url": "https://www.capfun.com/camping-france-aquitaine-lila-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-aquitaine-lila-FR.html",
+    "host": "www.capfun.com",
+    "slug": "064-camping-domaine-de-lila"
+  },
+  {
+    "row": 65,
+    "name": "CAMPING DOMAINE DE TÉORIX",
+    "city": "MARSEILLAN",
+    "postal_code": "34340",
+    "source_url": "https://www.capfun.com/camping-france-languedoc_roussillon-teorix-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-languedoc_roussillon-teorix-FR.html",
+    "host": "www.capfun.com",
+    "slug": "065-camping-domaine-de-teorix"
+  },
+  {
+    "row": 66,
+    "name": "CAMPING DOMAINE DU MOULINAL",
+    "city": "BIRON",
+    "postal_code": "24540",
+    "source_url": "https://www.capfun.com/camping-france-aquitaine-moulinal-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-aquitaine-moulinal-FR.html",
+    "host": "www.capfun.com",
+    "slug": "066-camping-domaine-du-moulinal"
+  },
+  {
+    "row": 67,
+    "name": "CAMPING DOMAINE DU SAGITTAIRE",
+    "city": "VINSOBRES",
+    "postal_code": "26110",
+    "source_url": "https://www.le-sagittaire.com/",
+    "browse_url": "https://www.le-sagittaire.com/",
+    "host": "www.le-sagittaire.com",
+    "slug": "067-camping-domaine-du-sagittaire"
+  },
+  {
+    "row": 68,
+    "name": "CAMPING DOMAINE DU VERDON",
+    "city": "CASTELLANE",
+    "postal_code": "04120",
+    "source_url": "https://www.sandaya.fr/nos-campings/domaine-du-verdon",
+    "browse_url": "https://www.sandaya.fr/nos-campings/domaine-du-verdon",
+    "host": "www.sandaya.fr",
+    "slug": "068-camping-domaine-du-verdon"
+  },
+  {
+    "row": 69,
+    "name": "CAMPING DOMAINE D’ARNAUTEILLE",
+    "city": "MONTCLAR",
+    "postal_code": "11250",
+    "source_url": "http://www.camping-arnauteille.com",
+    "browse_url": "http://www.camping-arnauteille.com",
+    "host": "www.camping-arnauteille.com",
+    "slug": "069-camping-domaine-darnauteille"
+  },
+  {
+    "row": 70,
+    "name": "CAMPING DOMAINE LA PALOMBIÈRE",
+    "city": "SAINTE-NATHALÈNE",
+    "postal_code": "24200",
+    "source_url": "https://www.capfun.com/camping-france-aquitaine-palombiere-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-aquitaine-palombiere-FR.html",
+    "host": "www.capfun.com",
+    "slug": "070-camping-domaine-la-palombiere"
+  },
+  {
+    "row": 71,
+    "name": "CAMPING DOMAINE LA YOLE",
+    "city": "VENDRES",
+    "postal_code": "34350",
+    "source_url": "https://www.homair.com/camping/le-domaine-de-la-yole",
+    "browse_url": "https://www.homair.com/camping/le-domaine-de-la-yole",
+    "host": "www.homair.com",
+    "slug": "071-camping-domaine-la-yole"
+  },
+  {
+    "row": 72,
+    "name": "CAMPING DOMAINE LE CLOS DES CAPITELLES",
+    "city": "SAINT-PRIVAT-DE-CHAMPCLOS",
+    "postal_code": "30430",
+    "source_url": "https://www.campingclosdescapitelles.com",
+    "browse_url": "https://www.campingclosdescapitelles.com",
+    "host": "www.campingclosdescapitelles.com",
+    "slug": "072-camping-domaine-le-clos-des-capitelles"
+  },
+  {
+    "row": 73,
+    "name": "CAMPING DOMAINE LE MIDI",
+    "city": "BARBÂTRE",
+    "postal_code": "85630",
+    "source_url": "https://www.sandaya.fr/nos-campings/domaine-le-midi",
+    "browse_url": "https://www.sandaya.fr/nos-campings/domaine-le-midi",
+    "host": "www.sandaya.fr",
+    "slug": "073-camping-domaine-le-midi"
+  },
+  {
+    "row": 74,
+    "name": "CAMPING DOMAINE LE POMMIER",
+    "city": "VILLENEUVE-DE-BERG",
+    "postal_code": "07170",
+    "source_url": "https://cielavillage.fr/campings/le-pommier-villeneuve-de-berg/",
+    "browse_url": "https://cielavillage.fr/campings/le-pommier-villeneuve-de-berg/",
+    "host": "cielavillage.fr",
+    "slug": "074-camping-domaine-le-pommier"
+  },
+  {
+    "row": 75,
+    "name": "CAMPING DOMAINE LES BOIS DU BARDELET",
+    "city": "POILLY-LEZ-GIEN",
+    "postal_code": "45500",
+    "source_url": "https://bardelet.com/",
+    "browse_url": "https://bardelet.com/",
+    "host": "bardelet.com",
+    "slug": "075-camping-domaine-les-bois-du-bardelet"
+  },
+  {
+    "row": 76,
+    "name": "CAMPING DU DOMAINE D'ANGLAS",
+    "city": "BRISSAC",
+    "postal_code": "34190",
+    "source_url": "https://www.camping-anglas.com",
+    "browse_url": "https://www.camping-anglas.com",
+    "host": "www.camping-anglas.com",
+    "slug": "076-camping-du-domaine-d-anglas"
+  },
+  {
+    "row": 77,
+    "name": "CAMPING DU LETTY",
+    "city": "BÉNODET",
+    "postal_code": "29950",
+    "source_url": "https://www.campingduletty.com/",
+    "browse_url": "https://www.campingduletty.com/",
+    "host": "www.campingduletty.com",
+    "slug": "077-camping-du-letty"
+  },
+  {
+    "row": 78,
+    "name": "CAMPING DU VAL DE BONNAL",
+    "city": "BONNAL",
+    "postal_code": "25680",
+    "source_url": "http://camping-valdebonnal.com",
+    "browse_url": "http://camping-valdebonnal.com",
+    "host": "camping-valdebonnal.com",
+    "slug": "078-camping-du-val-de-bonnal"
+  },
+  {
+    "row": 79,
+    "name": "CAMPING ECOLODGE ETOILE D'ARGENS, QUARTIER DES PEUPLIERS",
+    "city": "FRÉJUS",
+    "postal_code": "83370",
+    "source_url": "https://www.camping-la-barque.com/fr",
+    "browse_url": "https://www.camping-la-barque.com/fr",
+    "host": "www.camping-la-barque.com",
+    "slug": "079-camping-ecolodge-etoile-d-argens-quartier-des-peupliers"
+  },
+  {
+    "row": 80,
+    "name": "CAMPING ESCALE ST GILLES",
+    "city": "BÉNODET",
+    "postal_code": "29950",
+    "source_url": "https://www.escale-stgilles.fr/",
+    "browse_url": "https://www.escale-stgilles.fr/",
+    "host": "www.escale-stgilles.fr",
+    "slug": "080-camping-escale-st-gilles"
+  },
+  {
+    "row": 81,
+    "name": "CAMPING ESTEREL CARAVANING",
+    "city": "AGAY",
+    "postal_code": "83530",
+    "source_url": "https://www.esterel-caravaning.fr/",
+    "browse_url": "https://www.esterel-caravaning.fr/",
+    "host": "www.esterel-caravaning.fr",
+    "slug": "081-camping-esterel-caravaning"
+  },
+  {
+    "row": 82,
+    "name": "CAMPING FARRET",
+    "city": "VIAS",
+    "postal_code": "34450",
+    "source_url": "http://www.camping-farret.com",
+    "browse_url": "http://www.camping-farret.com",
+    "host": "www.camping-farret.com",
+    "slug": "082-camping-farret"
+  },
+  {
+    "row": 83,
+    "name": "CAMPING FERME DE PRUNAY",
+    "city": "SEILLAC",
+    "postal_code": "41150",
+    "source_url": "https://prunay.fr/",
+    "browse_url": "https://prunay.fr/",
+    "host": "prunay.fr",
+    "slug": "083-camping-ferme-de-prunay"
+  },
+  {
+    "row": 84,
+    "name": "CAMPING HOLIDAY GREEN",
+    "city": "FRÉJUS",
+    "postal_code": "83600",
+    "source_url": "https://www.holidaygreen.com/fr",
+    "browse_url": "https://www.holidaygreen.com/fr",
+    "host": "www.holidaygreen.com",
+    "slug": "084-camping-holiday-green"
+  },
+  {
+    "row": 85,
+    "name": "CAMPING HOLIDAY MARINA RESORT",
+    "city": "GRIMAUD",
+    "postal_code": "83310",
+    "source_url": "https://www.holiday-marina.com/",
+    "browse_url": "https://www.holiday-marina.com/",
+    "host": "www.holiday-marina.com",
+    "slug": "085-camping-holiday-marina-resort"
+  },
+  {
+    "row": 86,
+    "name": "CAMPING INTERNATIONAL DU LAC BLEU",
+    "city": "DOUSSARD",
+    "postal_code": "74210",
+    "source_url": "https://www.camping-lac-bleu.com/fr/",
+    "browse_url": "https://www.camping-lac-bleu.com/fr/",
+    "host": "www.camping-lac-bleu.com",
+    "slug": "086-camping-international-du-lac-bleu"
+  },
+  {
+    "row": 87,
+    "name": "CAMPING L'EDEN",
+    "city": "LE GRAU-DU-ROI",
+    "postal_code": "30240",
+    "source_url": "https://www.campingleden.fr/fr/",
+    "browse_url": "https://www.campingleden.fr/fr/",
+    "host": "www.campingleden.fr",
+    "slug": "087-camping-l-eden"
+  },
+  {
+    "row": 88,
+    "name": "CAMPING L'HIPPOCAMPE",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.camping-lasirene.fr/camping-l-hippocampe/",
+    "browse_url": "https://www.camping-lasirene.fr/camping-l-hippocampe/",
+    "host": "www.camping-lasirene.fr",
+    "slug": "088-camping-l-hippocampe"
+  },
+  {
+    "row": 89,
+    "name": "CAMPING L'HIPPOCAMPE",
+    "city": "VOLONNE",
+    "postal_code": "04290",
+    "source_url": "https://www.l-hippocampe.com/fr/",
+    "browse_url": "https://www.l-hippocampe.com/fr/",
+    "host": "www.l-hippocampe.com",
+    "slug": "089-camping-l-hippocampe"
+  },
+  {
+    "row": 90,
+    "name": "CAMPING L'HIRONDELLE",
+    "city": "MENGLON",
+    "postal_code": "26410",
+    "source_url": "http://www.campinghirondelle.com/",
+    "browse_url": "http://www.campinghirondelle.com/",
+    "host": "www.campinghirondelle.com",
+    "slug": "090-camping-l-hirondelle"
+  },
+  {
+    "row": 91,
+    "name": "CAMPING L'OASIS",
+    "city": "ECLASSAN",
+    "postal_code": "07370",
+    "source_url": "http://www.oasisardeche.com",
+    "browse_url": "http://www.oasisardeche.com",
+    "host": "www.oasisardeche.com",
+    "slug": "091-camping-l-oasis"
+  },
+  {
+    "row": 92,
+    "name": "CAMPING L'OCÉAN BRETON",
+    "city": "PLOBANNALEC-LESCONIL",
+    "postal_code": "29740",
+    "source_url": "http://www.oceanbreton.com",
+    "browse_url": "http://www.oceanbreton.com",
+    "host": "www.oceanbreton.com",
+    "slug": "092-camping-l-ocean-breton"
+  },
+  {
+    "row": 93,
+    "name": "CAMPING L'OCÉANO D'OR",
+    "city": "JARD-SUR-MER",
+    "postal_code": "85520",
+    "source_url": "https://www.chadotel.com/camping-loceano-dor-jard-sur-mer/",
+    "browse_url": "https://www.chadotel.com/camping-loceano-dor-jard-sur-mer/",
+    "host": "www.chadotel.com",
+    "slug": "093-camping-l-oceano-d-or"
+  },
+  {
+    "row": 94,
+    "name": "CAMPING L'ORANGERIE DE LANNIRON",
+    "city": "QUIMPER",
+    "postal_code": "29000",
+    "source_url": "https://lanniron.com/fr/",
+    "browse_url": "https://lanniron.com/fr/",
+    "host": "lanniron.com",
+    "slug": "094-camping-l-orangerie-de-lanniron"
+  },
+  {
+    "row": 95,
+    "name": "CAMPING L'ORÉE DU BOIS",
+    "city": "LES MATHES",
+    "postal_code": "17570",
+    "source_url": "https://www.sandaya.fr/nos-campings/l-oree-du-bois",
+    "browse_url": "https://www.sandaya.fr/nos-campings/l-oree-du-bois",
+    "host": "www.sandaya.fr",
+    "slug": "095-camping-l-oree-du-bois"
+  },
+  {
+    "row": 96,
+    "name": "CAMPING L'ÉTOILE D'ARGENS",
+    "city": "SAINT AYGULF",
+    "postal_code": "83370",
+    "source_url": "https://www.etoiledargens.com",
+    "browse_url": "https://www.etoiledargens.com",
+    "host": "www.etoiledargens.com",
+    "slug": "096-camping-l-etoile-d-argens"
+  },
+  {
+    "row": 97,
+    "name": "CAMPING L'ÉTOILE DES NEIGES",
+    "city": "MONTCLAR",
+    "postal_code": "04140",
+    "source_url": "https://www.yellohvillage-etoile-des-neiges.com/fr/",
+    "browse_url": "https://www.yellohvillage-etoile-des-neiges.com/fr/",
+    "host": "www.yellohvillage-etoile-des-neiges.com",
+    "slug": "097-camping-l-etoile-des-neiges"
+  },
+  {
+    "row": 98,
+    "name": "CAMPING LA BOULINIÈRE",
+    "city": "SAINT-GEORGES-D'OLÉRON",
+    "postal_code": "17190",
+    "source_url": "https://www.campinglabouliniere.com",
+    "browse_url": "https://www.campinglabouliniere.com",
+    "host": "www.campinglabouliniere.com",
+    "slug": "098-camping-la-bouliniere"
+  },
+  {
+    "row": 99,
+    "name": "CAMPING LA BRANDE",
+    "city": "LE CHÂTEAU-D'OLÉRON",
+    "postal_code": "17480",
+    "source_url": "http://www.camping-labrande.com",
+    "browse_url": "http://www.camping-labrande.com",
+    "host": "www.camping-labrande.com",
+    "slug": "099-camping-la-brande"
+  },
+  {
+    "row": 100,
+    "name": "CAMPING LA BRIQUERIE",
+    "city": "ÉQUEMAUVILLE",
+    "postal_code": "14600",
+    "source_url": "https://www.campinglabriquerie.com/",
+    "browse_url": "https://www.campinglabriquerie.com/",
+    "host": "www.campinglabriquerie.com",
+    "slug": "100-camping-la-briquerie"
+  },
+  {
+    "row": 101,
+    "name": "CAMPING LA CAPRICIEUSE",
+    "city": "LUC-SUR-MER",
+    "postal_code": "14530",
+    "source_url": "http://www.campinglacapricieuse.com",
+    "browse_url": "http://www.campinglacapricieuse.com",
+    "host": "www.campinglacapricieuse.com",
+    "slug": "101-camping-la-capricieuse"
+  },
+  {
+    "row": 102,
+    "name": "CAMPING LA CHAPELLE",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.camping-la-chapelle.com/",
+    "browse_url": "https://www.camping-la-chapelle.com/",
+    "host": "www.camping-la-chapelle.com",
+    "slug": "102-camping-la-chapelle"
+  },
+  {
+    "row": 103,
+    "name": "CAMPING LA CROIX DU VIEUX PONT",
+    "city": "BERNY-RIVIÈRE",
+    "postal_code": "02290",
+    "source_url": "https://www.homair.com/camping/la-croix-du-vieux-pont",
+    "browse_url": "https://www.homair.com/camping/la-croix-du-vieux-pont",
+    "host": "www.homair.com",
+    "slug": "103-camping-la-croix-du-vieux-pont"
+  },
+  {
+    "row": 104,
+    "name": "CAMPING LA CÔTE DES ROSES",
+    "city": "NARBONNE",
+    "postal_code": "11100",
+    "source_url": "https://www.ms-vacances.com/destinations/occitanie/campings-aude/camping-club-la-cote-des-roses/?date_debut=15/08/2026&date_fin=22/08/2026&participants=1",
+    "browse_url": "https://www.ms-vacances.com/destinations/occitanie/campings-aude/camping-club-la-cote-des-roses/?date_debut=15/08/2026&date_fin=22/08/2026&participants=1",
+    "host": "www.ms-vacances.com",
+    "slug": "104-camping-la-cote-des-roses"
+  },
+  {
+    "row": 105,
+    "name": "CAMPING LA DUNE DES SABLES",
+    "city": "LES SABLES-D'OLONNE",
+    "postal_code": "85100",
+    "source_url": "https://www.chadotel.com/fr/camping/vendee/les-sables-dolonne/camping-la-dune-des-sables",
+    "browse_url": "https://www.chadotel.com/fr/camping/vendee/les-sables-dolonne/camping-la-dune-des-sables",
+    "host": "www.chadotel.com",
+    "slug": "105-camping-la-dune-des-sables"
+  },
+  {
+    "row": 106,
+    "name": "CAMPING LA FARIGOULETTE",
+    "city": "SAINT-LAURENT-DU-VERDON",
+    "postal_code": "04500",
+    "source_url": "https://lafarigoulette.cielavillage.fr/",
+    "browse_url": "https://lafarigoulette.cielavillage.fr/",
+    "host": "lafarigoulette.cielavillage.fr",
+    "slug": "106-camping-la-farigoulette"
+  },
+  {
+    "row": 107,
+    "name": "CAMPING LA FERME DE LA SERRAZ",
+    "city": "DOUSSARD",
+    "postal_code": "74210",
+    "source_url": "https://www.lafermedelaserraz.com/",
+    "browse_url": "https://www.lafermedelaserraz.com/",
+    "host": "www.lafermedelaserraz.com",
+    "slug": "107-camping-la-ferme-de-la-serraz"
+  },
+  {
+    "row": 108,
+    "name": "CAMPING LA GRAINETIÈRE",
+    "city": "LA FLOTTE",
+    "postal_code": "17630",
+    "source_url": "https://www.homair.com/camping/la-grainetiere",
+    "browse_url": "https://www.homair.com/camping/la-grainetiere",
+    "host": "www.homair.com",
+    "slug": "108-camping-la-grainetiere"
+  },
+  {
+    "row": 109,
+    "name": "CAMPING LA GRANDE MÉTAIRIE DE KERMARIO",
+    "city": "CARNAC",
+    "postal_code": "56340",
+    "source_url": "https://www.homair.com/camping/la-grande-metairie",
+    "browse_url": "https://www.homair.com/camping/la-grande-metairie",
+    "host": "www.homair.com",
+    "slug": "109-camping-la-grande-metairie-de-kermario"
+  },
+  {
+    "row": 110,
+    "name": "CAMPING LA GRANDE TORTUE",
+    "city": "CANDÉ-SUR-BEUVRON",
+    "postal_code": "41120",
+    "source_url": "https://www.grandetortue.com/",
+    "browse_url": "https://www.grandetortue.com/",
+    "host": "www.grandetortue.com",
+    "slug": "110-camping-la-grande-tortue"
+  },
+  {
+    "row": 111,
+    "name": "CAMPING LA GRAPPE FLEURIE",
+    "city": "FLEURIE",
+    "postal_code": "69820",
+    "source_url": "https://www.beaujolais-camping.com/",
+    "browse_url": "https://www.beaujolais-camping.com/",
+    "host": "www.beaujolais-camping.com",
+    "slug": "111-camping-la-grappe-fleurie"
+  },
+  {
+    "row": 112,
+    "name": "CAMPING LA MIRABELLE",
+    "city": "VOLSTROFF",
+    "postal_code": "57940",
+    "source_url": "https://www.capfun.com/camping-france-lorraine-la_mirabelle-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-lorraine-la_mirabelle-FR.html",
+    "host": "www.capfun.com",
+    "slug": "112-camping-la-mirabelle"
+  },
+  {
+    "row": 113,
+    "name": "CAMPING LA PAILLOTTE",
+    "city": "AZUR",
+    "postal_code": "40140",
+    "source_url": "https://www.paillotte.com/",
+    "browse_url": "https://www.paillotte.com/",
+    "host": "www.paillotte.com",
+    "slug": "113-camping-la-paillotte"
+  },
+  {
+    "row": 114,
+    "name": "CAMPING LA PERGOLA",
+    "city": "MARIGNY",
+    "postal_code": "39130",
+    "source_url": "https://www.capfun.com/camping-france-franche_comte-pergola-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-franche_comte-pergola-FR.html",
+    "host": "www.capfun.com",
+    "slug": "114-camping-la-pergola"
+  },
+  {
+    "row": 115,
+    "name": "CAMPING LA PETITE CAMARGUE",
+    "city": "AIGUES-MORTES",
+    "postal_code": "30220",
+    "source_url": "http://www.yellohvillage-petite-camargue.com",
+    "browse_url": "http://www.yellohvillage-petite-camargue.com",
+    "host": "www.yellohvillage-petite-camargue.com",
+    "slug": "115-camping-la-petite-camargue"
+  },
+  {
+    "row": 116,
+    "name": "CAMPING LA PINÈDE",
+    "city": "CALVI",
+    "postal_code": "20260",
+    "source_url": "https://camping-calvi.com/",
+    "browse_url": "https://camping-calvi.com/",
+    "host": "camping-calvi.com",
+    "slug": "116-camping-la-pinede"
+  },
+  {
+    "row": 117,
+    "name": "CAMPING LA PINÈDE",
+    "city": "LES MATHES",
+    "postal_code": "17570",
+    "source_url": "https://www.campinglapinede.com/",
+    "browse_url": "https://www.campinglapinede.com/",
+    "host": "www.campinglapinede.com",
+    "slug": "117-camping-la-pinede"
+  },
+  {
+    "row": 118,
+    "name": "CAMPING LA PISCINE",
+    "city": "LE BOURG-D'OISANS",
+    "postal_code": "38520",
+    "source_url": "https://www.camping-piscine.com/",
+    "browse_url": "https://www.camping-piscine.com/",
+    "host": "www.camping-piscine.com",
+    "slug": "118-camping-la-piscine"
+  },
+  {
+    "row": 119,
+    "name": "CAMPING LA PLAGE",
+    "city": "VIAS",
+    "postal_code": "34450",
+    "source_url": "https://www.camping-farret.com/fr/",
+    "browse_url": "https://www.camping-farret.com/fr/",
+    "host": "www.camping-farret.com",
+    "slug": "119-camping-la-plage"
+  },
+  {
+    "row": 120,
+    "name": "CAMPING LA PLAGE FLEURIE",
+    "city": "VALLON-PONT-D'ARC",
+    "postal_code": "07150",
+    "source_url": "http://www.laplagefleurie.com",
+    "browse_url": "http://www.laplagefleurie.com",
+    "host": "www.laplagefleurie.com",
+    "slug": "120-camping-la-plage-fleurie"
+  },
+  {
+    "row": 121,
+    "name": "CAMPING LA POMME DE PIN",
+    "city": "SAINT-HILAIRE-DE-RIEZ",
+    "postal_code": "85270",
+    "source_url": "http://www.campingpommedepin.fr",
+    "browse_url": "http://www.campingpommedepin.fr",
+    "host": "www.campingpommedepin.fr",
+    "slug": "121-camping-la-pomme-de-pin"
+  },
+  {
+    "row": 122,
+    "name": "CAMPING LA PÈNE BLANCHE",
+    "city": "LOUDENVIELLE",
+    "postal_code": "65510",
+    "source_url": "https://loudenvielle.wellness-sport-camping.com/",
+    "browse_url": "https://loudenvielle.wellness-sport-camping.com/",
+    "host": "loudenvielle.wellness-sport-camping.com",
+    "slug": "122-camping-la-pene-blanche"
+  },
+  {
+    "row": 123,
+    "name": "CAMPING LA ROCHE POSAY VACANCES",
+    "city": "LA ROCHE-POSAY",
+    "postal_code": "86270",
+    "source_url": "https://www.larocheposay-vacances.com",
+    "browse_url": "https://www.larocheposay-vacances.com",
+    "host": "www.larocheposay-vacances.com",
+    "slug": "123-camping-la-roche-posay-vacances"
+  },
+  {
+    "row": 124,
+    "name": "CAMPING LA ROTONDE LE VILLAGE WESTERN",
+    "city": "HOURTIN",
+    "postal_code": "33990",
+    "source_url": "https://www.village-western.com/",
+    "browse_url": "https://www.village-western.com/",
+    "host": "www.village-western.com",
+    "slug": "124-camping-la-rotonde-le-village-western"
+  },
+  {
+    "row": 125,
+    "name": "CAMPING LA ROUBINE",
+    "city": "VALLON-PONT-D'ARC",
+    "postal_code": "07150",
+    "source_url": "https://www.camping-roubine.com/",
+    "browse_url": "https://www.camping-roubine.com/",
+    "host": "www.camping-roubine.com",
+    "slug": "125-camping-la-roubine"
+  },
+  {
+    "row": 126,
+    "name": "CAMPING LA ROUTE BLANCHE",
+    "city": "BRÉVILLE-SUR-MER",
+    "postal_code": "50290",
+    "source_url": "https://www.capfun.com/camping-france-basse_normandie-route_blanche-FR.html?mois=7",
+    "browse_url": "https://www.capfun.com/camping-france-basse_normandie-route_blanche-FR.html?mois=7",
+    "host": "www.capfun.com",
+    "slug": "126-camping-la-route-blanche"
+  },
+  {
+    "row": 127,
+    "name": "CAMPING LA SIRÈNE",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.camping-lasirene.fr/",
+    "browse_url": "https://www.camping-lasirene.fr/",
+    "host": "www.camping-lasirene.fr",
+    "slug": "127-camping-la-sirene"
+  },
+  {
+    "row": 128,
+    "name": "CAMPING LA TOISON D'OR",
+    "city": "RAMATUELLE",
+    "postal_code": "83350",
+    "source_url": "https://www.riviera-villages.com/Toison-d-Or",
+    "browse_url": "https://www.riviera-villages.com/Toison-d-Or",
+    "host": "www.riviera-villages.com",
+    "slug": "128-camping-la-toison-d-or"
+  },
+  {
+    "row": 129,
+    "name": "CAMPING LA VALLÉE",
+    "city": "HOULGATE",
+    "postal_code": "14510",
+    "source_url": "http://www.campinglavallee.com",
+    "browse_url": "http://www.campinglavallee.com",
+    "host": "www.campinglavallee.com",
+    "slug": "129-camping-la-vallee"
+  },
+  {
+    "row": 130,
+    "name": "CAMPING LA VALLÉE DE DEAUVILLE",
+    "city": "SAINT-ARNOULT",
+    "postal_code": "14800",
+    "source_url": "https://camping-deauville.com/",
+    "browse_url": "https://camping-deauville.com/",
+    "host": "camping-deauville.com",
+    "slug": "130-camping-la-vallee-de-deauville"
+  },
+  {
+    "row": 131,
+    "name": "CAMPING LA VALLÉE DU BARRY",
+    "city": "BOLLÈNE",
+    "postal_code": "84500",
+    "source_url": "https://www.valleedebarry.com/",
+    "browse_url": "https://www.valleedebarry.com/",
+    "host": "www.valleedebarry.com",
+    "slug": "131-camping-la-vallee-du-barry"
+  },
+  {
+    "row": 132,
+    "name": "CAMPING LAC DE LA LIEZ",
+    "city": "PEIGNEY",
+    "postal_code": "52200",
+    "source_url": "https://www.campingliez.com/fr/",
+    "browse_url": "https://www.campingliez.com/fr/",
+    "host": "www.campingliez.com",
+    "slug": "132-camping-lac-de-la-liez"
+  },
+  {
+    "row": 133,
+    "name": "CAMPING LE BOIS FLEURI",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.bois-fleuri.com/",
+    "browse_url": "https://www.bois-fleuri.com/",
+    "host": "www.bois-fleuri.com",
+    "slug": "133-camping-le-bois-fleuri"
+  },
+  {
+    "row": 134,
+    "name": "CAMPING LE BRASILIA",
+    "city": "CANET-EN-ROUSSILLON",
+    "postal_code": "66140",
+    "source_url": "https://www.brasilia.fr/",
+    "browse_url": "https://www.brasilia.fr/",
+    "host": "www.brasilia.fr",
+    "slug": "134-camping-le-brasilia"
+  },
+  {
+    "row": 135,
+    "name": "CAMPING LE CABELLOU PLAGE",
+    "city": "CONCARNEAU",
+    "postal_code": "29900",
+    "source_url": "https://www.le-cabellou-plage.com/",
+    "browse_url": "https://www.le-cabellou-plage.com/",
+    "host": "www.le-cabellou-plage.com",
+    "slug": "135-camping-le-cabellou-plage"
+  },
+  {
+    "row": 136,
+    "name": "CAMPING LE CALYPSO",
+    "city": "TORREILLES",
+    "postal_code": "66440",
+    "source_url": "https://www.camping-calypso.com/",
+    "browse_url": "https://www.camping-calypso.com/",
+    "host": "www.camping-calypso.com",
+    "slug": "136-camping-le-calypso"
+  },
+  {
+    "row": 137,
+    "name": "CAMPING LE CAMPOLORO",
+    "city": "CERVIONE",
+    "postal_code": "20221",
+    "source_url": "https://www.lecampoloro.com/",
+    "browse_url": "https://www.lecampoloro.com/",
+    "host": "www.lecampoloro.com",
+    "slug": "137-camping-le-campoloro"
+  },
+  {
+    "row": 138,
+    "name": "CAMPING LE CARAVAN'ÎLE",
+    "city": "LA GUÉRINIÈRE",
+    "postal_code": "85680",
+    "source_url": "https://www.caravanile.com/",
+    "browse_url": "https://www.caravanile.com/",
+    "host": "www.caravanile.com",
+    "slug": "138-camping-le-caravan-ile"
+  },
+  {
+    "row": 139,
+    "name": "CAMPING LE CHÂTEAU",
+    "city": "SAINT-HILAIRE-DE-RIEZ",
+    "postal_code": "85270",
+    "source_url": "https://www.sunmarina.com/camping-le-chateau/",
+    "browse_url": "https://www.sunmarina.com/camping-le-chateau/",
+    "host": "www.sunmarina.com",
+    "slug": "139-camping-le-chateau"
+  },
+  {
+    "row": 140,
+    "name": "CAMPING LE CHÂTELET",
+    "city": "SAINT-CAST-LE-GUILDO",
+    "postal_code": "22380",
+    "source_url": "http://www.lechatelet.com",
+    "browse_url": "http://www.lechatelet.com",
+    "host": "www.lechatelet.com",
+    "slug": "140-camping-le-chatelet"
+  },
+  {
+    "row": 141,
+    "name": "CAMPING LE CLOS DE FERRAND",
+    "city": "SÉRIGNAN",
+    "postal_code": "34410",
+    "source_url": "https://www.leclosferrand-centrenaturiste.com/",
+    "browse_url": "https://www.leclosferrand-centrenaturiste.com/",
+    "host": "www.leclosferrand-centrenaturiste.com",
+    "slug": "141-camping-le-clos-de-ferrand"
+  },
+  {
+    "row": 142,
+    "name": "CAMPING LE CLOS DE LA GRANGETTE",
+    "city": "SÉRIGNAN",
+    "postal_code": "34410",
+    "source_url": "https://www.leclosdelagrangette-centrenaturiste.com/",
+    "browse_url": "https://www.leclosdelagrangette-centrenaturiste.com/",
+    "host": "www.leclosdelagrangette-centrenaturiste.com",
+    "slug": "142-camping-le-clos-de-la-grangette"
+  },
+  {
+    "row": 143,
+    "name": "CAMPING LE CORMORAN",
+    "city": "ARS-EN-RÉ",
+    "postal_code": "17590",
+    "source_url": "www.camping-ile-de-re-cormoran.com",
+    "browse_url": "https://www.camping-ile-de-re-cormoran.com",
+    "host": "www.camping-ile-de-re-cormoran.com",
+    "slug": "143-camping-le-cormoran"
+  },
+  {
+    "row": 144,
+    "name": "CAMPING LE CORMORAN",
+    "city": "RAVENOVILLE",
+    "postal_code": "50480",
+    "source_url": "https://www.homair.com/camping/le-cormoran",
+    "browse_url": "https://www.homair.com/camping/le-cormoran",
+    "host": "www.homair.com",
+    "slug": "144-camping-le-cormoran"
+  },
+  {
+    "row": 145,
+    "name": "CAMPING LE COUSPEAU",
+    "city": "LE POËT-CÉLARD",
+    "postal_code": "26460",
+    "source_url": "www.couspeau.fr",
+    "browse_url": "https://www.couspeau.fr",
+    "host": "www.couspeau.fr",
+    "slug": "145-camping-le-couspeau"
+  },
+  {
+    "row": 146,
+    "name": "CAMPING LE DAUPHIN",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.campingledauphin.com/",
+    "browse_url": "https://www.campingledauphin.com/",
+    "host": "www.campingledauphin.com",
+    "slug": "146-camping-le-dauphin"
+  },
+  {
+    "row": 147,
+    "name": "CAMPING LE DOMAINE D'INLY",
+    "city": "PÉNESTIN",
+    "postal_code": "56760",
+    "source_url": "http://www.camping-inly.com",
+    "browse_url": "http://www.camping-inly.com",
+    "host": "www.camping-inly.com",
+    "slug": "147-camping-le-domaine-d-inly"
+  },
+  {
+    "row": 148,
+    "name": "CAMPING LE DOMAINE DE BÉLÉZY PROVENCE",
+    "city": "BÉDOIN",
+    "postal_code": "84410",
+    "source_url": "https://www.belezy.com/",
+    "browse_url": "https://www.belezy.com/",
+    "host": "www.belezy.com",
+    "slug": "148-camping-le-domaine-de-belezy-provence"
+  },
+  {
+    "row": 149,
+    "name": "CAMPING LE DOMAINE DE DIANE",
+    "city": "QUEND",
+    "postal_code": "80120",
+    "source_url": "https://www.domainedediane.com/fr/",
+    "browse_url": "https://www.domainedediane.com/fr/",
+    "host": "www.domainedediane.com",
+    "slug": "149-camping-le-domaine-de-diane"
+  },
+  {
+    "row": 150,
+    "name": "CAMPING LE DOMAINE DE FROMENGAL",
+    "city": "LE BUISSON-DE-CADOUIN",
+    "postal_code": "24480",
+    "source_url": "https://www.domaine-fromengal.com/",
+    "browse_url": "https://www.domaine-fromengal.com/",
+    "host": "www.domaine-fromengal.com",
+    "slug": "150-camping-le-domaine-de-fromengal"
+  },
+  {
+    "row": 151,
+    "name": "CAMPING LE DOMAINE DE L'UBAYE",
+    "city": "MÉOLANS-REVEL",
+    "postal_code": "04340",
+    "source_url": "http://www.domaineubaye.com",
+    "browse_url": "http://www.domaineubaye.com",
+    "host": "www.domaineubaye.com",
+    "slug": "151-camping-le-domaine-de-l-ubaye"
+  },
+  {
+    "row": 152,
+    "name": "CAMPING LE DOMAINE DE LA BERGERIE",
+    "city": "ROQUEBRUNE-SUR-ARGENS",
+    "postal_code": "83520",
+    "source_url": "https://www.domainelabergerie.fr/fr/",
+    "browse_url": "https://www.domainelabergerie.fr/fr/",
+    "host": "www.domainelabergerie.fr",
+    "slug": "152-camping-le-domaine-de-la-bergerie"
+  },
+  {
+    "row": 153,
+    "name": "CAMPING LE DOMAINE DE LA PAILLE BASSE",
+    "city": "SOUILLAC",
+    "postal_code": "46200",
+    "source_url": "http://www.lapaillebasse.com",
+    "browse_url": "http://www.lapaillebasse.com",
+    "host": "www.lapaillebasse.com",
+    "slug": "153-camping-le-domaine-de-la-paille-basse"
+  },
+  {
+    "row": 154,
+    "name": "CAMPING LE DOMAINE DE MASSEREAU",
+    "city": "SOMMIÈRES",
+    "postal_code": "30250",
+    "source_url": "https://www.homair.com/camping/le-domaine-de-massereau",
+    "browse_url": "https://www.homair.com/camping/le-domaine-de-massereau",
+    "host": "www.homair.com",
+    "slug": "154-camping-le-domaine-de-massereau"
+  },
+  {
+    "row": 155,
+    "name": "CAMPING LE DOMAINE DE MAËL",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.capfun.com/camping-france-languedoc_roussillon-domaine_de_mael-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-languedoc_roussillon-domaine_de_mael-FR.html",
+    "host": "www.capfun.com",
+    "slug": "155-camping-le-domaine-de-mael"
+  },
+  {
+    "row": 156,
+    "name": "CAMPING LE DOMAINE DES FORGES",
+    "city": "AVRILLÉ",
+    "postal_code": "85440",
+    "source_url": "https://www.capfun.com/camping-france-pays_de_la_loire-domaine_des_forges-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-pays_de_la_loire-domaine_des_forges-FR.html",
+    "host": "www.capfun.com",
+    "slug": "156-camping-le-domaine-des-forges"
+  },
+  {
+    "row": 157,
+    "name": "CAMPING LE DOMAINE DES NAÏADES",
+    "city": "GRIMAUD",
+    "postal_code": "83310",
+    "source_url": "https://www.homair.com/camping/le-domaine-des-naiades",
+    "browse_url": "https://www.homair.com/camping/le-domaine-des-naiades",
+    "host": "www.homair.com",
+    "slug": "157-camping-le-domaine-des-naiades"
+  },
+  {
+    "row": 158,
+    "name": "CAMPING LE DOMAINE DES ORMES",
+    "city": "EPINIAC",
+    "postal_code": "35120",
+    "source_url": "https://www.lesormes.com/fr",
+    "browse_url": "https://www.lesormes.com/fr",
+    "host": "www.lesormes.com",
+    "slug": "158-camping-le-domaine-des-ormes"
+  },
+  {
+    "row": 159,
+    "name": "CAMPING LE DOMAINE DU CLARYS",
+    "city": "SAINT-JEAN-DE-MONTS",
+    "postal_code": "85160",
+    "source_url": "https://www.homair.com/camping/le-domaine-du-clarys",
+    "browse_url": "https://www.homair.com/camping/le-domaine-du-clarys",
+    "host": "www.homair.com",
+    "slug": "159-camping-le-domaine-du-clarys"
+  },
+  {
+    "row": 160,
+    "name": "CAMPING LE DOMAINE DU LOGIS",
+    "city": "LA CHAPELLE-AUX-FILTZMÉENS",
+    "postal_code": "35190",
+    "source_url": "https://www.homair.com/camping/domaine-du-logis",
+    "browse_url": "https://www.homair.com/camping/domaine-du-logis",
+    "host": "www.homair.com",
+    "slug": "160-camping-le-domaine-du-logis"
+  },
+  {
+    "row": 161,
+    "name": "CAMPING LE DOMAINE DU MERLE ROUX",
+    "city": "BAIX",
+    "postal_code": "07210",
+    "source_url": "https://www.capfun.com/camping-france-rhone_alpes-le_merle_roux-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-rhone_alpes-le_merle_roux-FR.html",
+    "host": "www.capfun.com",
+    "slug": "161-camping-le-domaine-du-merle-roux"
+  },
+  {
+    "row": 162,
+    "name": "CAMPING LE DOMAINE LES DAUPHINS BLEUS",
+    "city": "GIVRAND",
+    "postal_code": "85800",
+    "source_url": "https://www.capfun.com/camping-france-pays_de_la_loire-dauphins_bleus-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-pays_de_la_loire-dauphins_bleus-FR.html",
+    "host": "www.capfun.com",
+    "slug": "162-camping-le-domaine-les-dauphins-bleus"
+  },
+  {
+    "row": 163,
+    "name": "CAMPING LE DOMAINE LES ORÉADES",
+    "city": "SANGUINET",
+    "postal_code": "40460",
+    "source_url": "https://domainelesoreades.com/",
+    "browse_url": "https://domainelesoreades.com/",
+    "host": "domainelesoreades.com",
+    "slug": "163-camping-le-domaine-les-oreades"
+  },
+  {
+    "row": 164,
+    "name": "CAMPING LE DONJON DE LARS",
+    "city": "COURSEULLES-SUR-MER",
+    "postal_code": "14470",
+    "source_url": "https://www.capfun.com/camping-france-basse_normandie-donjon_de_lars-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-basse_normandie-donjon_de_lars-FR.html",
+    "host": "www.capfun.com",
+    "slug": "164-camping-le-donjon-de-lars"
+  },
+  {
+    "row": 165,
+    "name": "CAMPING LE FIEF",
+    "city": "SAINT-BREVIN-LES-PINS",
+    "postal_code": "44250",
+    "source_url": "https://www.camping-le-fief.com/",
+    "browse_url": "https://www.camping-le-fief.com/",
+    "host": "www.camping-le-fief.com",
+    "slug": "165-camping-le-fief"
+  },
+  {
+    "row": 166,
+    "name": "CAMPING LE FLORIDA",
+    "city": "ELNE",
+    "postal_code": "66200",
+    "source_url": "www.campingleflorida.com",
+    "browse_url": "https://www.campingleflorida.com",
+    "host": "www.campingleflorida.com",
+    "slug": "166-camping-le-florida"
+  },
+  {
+    "row": 167,
+    "name": "CAMPING LE FLORIDE ET L'EMBOUCHURE",
+    "city": "LE BARCARÈS",
+    "postal_code": "66420",
+    "source_url": "https://floride.fr/",
+    "browse_url": "https://floride.fr/",
+    "host": "floride.fr",
+    "slug": "167-camping-le-floride-et-l-embouchure"
+  },
+  {
+    "row": 168,
+    "name": "CAMPING LE GRAND LARGE",
+    "city": "LES PIEUX",
+    "postal_code": "50340",
+    "source_url": "http://www.legrandlarge.com",
+    "browse_url": "http://www.legrandlarge.com",
+    "host": "www.legrandlarge.com",
+    "slug": "168-camping-le-grand-large"
+  },
+  {
+    "row": 169,
+    "name": "CAMPING LE MOULIN DE LA PIQUE",
+    "city": "PAYS-DE-BELVÈS",
+    "postal_code": "24170",
+    "source_url": "https://www.rcn.nl/fr/camping/france/dordogne/rcn-le-moulin-de-la-pique",
+    "browse_url": "https://www.rcn.nl/fr/camping/france/dordogne/rcn-le-moulin-de-la-pique",
+    "host": "www.rcn.nl",
+    "slug": "169-camping-le-moulin-de-la-pique"
+  },
+  {
+    "row": 170,
+    "name": "CAMPING LE NAPOLÉON",
+    "city": "VIAS",
+    "postal_code": "34450",
+    "source_url": "https://www.homair.com/camping/club-le-napoleon",
+    "browse_url": "https://www.homair.com/camping/club-le-napoleon",
+    "host": "www.homair.com",
+    "slug": "170-camping-le-napoleon"
+  },
+  {
+    "row": 171,
+    "name": "CAMPING LE PARADIS",
+    "city": "SAINT-LÉON-SUR-VÉZÈRE",
+    "postal_code": "24290",
+    "source_url": "https://le-paradis.fr/",
+    "browse_url": "https://le-paradis.fr/",
+    "host": "le-paradis.fr",
+    "slug": "171-camping-le-paradis"
+  },
+  {
+    "row": 172,
+    "name": "CAMPING LE PAVILLON ROYAL",
+    "city": "BIDART",
+    "postal_code": "64210",
+    "source_url": "http://www.pavillon-royal.com",
+    "browse_url": "http://www.pavillon-royal.com",
+    "host": "www.pavillon-royal.com",
+    "slug": "172-camping-le-pavillon-royal"
+  },
+  {
+    "row": 173,
+    "name": "CAMPING LE PIN PARASOL",
+    "city": "LA CHAPELLE-HERMIER",
+    "postal_code": "85220",
+    "source_url": "http://www.campingpinparasol.fr",
+    "browse_url": "http://www.campingpinparasol.fr",
+    "host": "www.campingpinparasol.fr",
+    "slug": "173-camping-le-pin-parasol"
+  },
+  {
+    "row": 174,
+    "name": "CAMPING LE PRÉ BAS",
+    "city": "CHAMBON-SUR-LAC",
+    "postal_code": "63790",
+    "source_url": "https://www.campingauvergne.com/",
+    "browse_url": "https://www.campingauvergne.com/",
+    "host": "www.campingauvergne.com",
+    "slug": "174-camping-le-pre-bas"
+  },
+  {
+    "row": 175,
+    "name": "CAMPING LE PRÉ CATALAN",
+    "city": "LE BARCARÈS",
+    "postal_code": "66420",
+    "source_url": "http://precatalan.com",
+    "browse_url": "http://precatalan.com",
+    "host": "precatalan.com",
+    "slug": "175-camping-le-pre-catalan"
+  },
+  {
+    "row": 176,
+    "name": "CAMPING LE RANC DAVAINE",
+    "city": "SAINT-ALBAN-AURIOLLES",
+    "postal_code": "07120",
+    "source_url": "https://www.camping-ranc-davaine.fr/",
+    "browse_url": "https://www.camping-ranc-davaine.fr/",
+    "host": "www.camping-ranc-davaine.fr",
+    "slug": "176-camping-le-ranc-davaine"
+  },
+  {
+    "row": 177,
+    "name": "CAMPING LE RANCH",
+    "city": "LE ROZEL",
+    "postal_code": "50340",
+    "source_url": "http://www.camping-leranch.com",
+    "browse_url": "http://www.camping-leranch.com",
+    "host": "www.camping-leranch.com",
+    "slug": "177-camping-le-ranch"
+  },
+  {
+    "row": 178,
+    "name": "CAMPING LE ROUMINGUE",
+    "city": "LANTON",
+    "postal_code": "33138",
+    "source_url": "https://www.capfun.com/camping-france-aquitaine-roumingue-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-aquitaine-roumingue-FR.html",
+    "host": "www.capfun.com",
+    "slug": "178-camping-le-roumingue"
+  },
+  {
+    "row": 179,
+    "name": "CAMPING LE RUISSEAU",
+    "city": "BIDART",
+    "postal_code": "64210",
+    "source_url": "http://www.camping-le-ruisseau.fr",
+    "browse_url": "http://www.camping-le-ruisseau.fr",
+    "host": "www.camping-le-ruisseau.fr",
+    "slug": "179-camping-le-ruisseau"
+  },
+  {
+    "row": 180,
+    "name": "CAMPING LE SAINT MARTIN",
+    "city": "MOLIETS-ET-MAA",
+    "postal_code": "40660",
+    "source_url": "http://www.camping-saint-martin.fr",
+    "browse_url": "http://www.camping-saint-martin.fr",
+    "host": "www.camping-saint-martin.fr",
+    "slug": "180-camping-le-saint-martin"
+  },
+  {
+    "row": 181,
+    "name": "CAMPING LE SOLEIL",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.camping-le-soleil.fr/",
+    "browse_url": "https://www.camping-le-soleil.fr/",
+    "host": "www.camping-le-soleil.fr",
+    "slug": "181-camping-le-soleil"
+  },
+  {
+    "row": 182,
+    "name": "CAMPING LE SOLEIL DE LA MÉDITERRANÉE",
+    "city": "SAINT-CYPRIEN",
+    "postal_code": "66750",
+    "source_url": "https://www.camping-soleil-mediterranee.com/",
+    "browse_url": "https://www.camping-soleil-mediterranee.com/",
+    "host": "www.camping-soleil-mediterranee.com",
+    "slug": "182-camping-le-soleil-de-la-mediterranee"
+  },
+  {
+    "row": 183,
+    "name": "CAMPING LE SOLEIL VIVARAIS",
+    "city": "SAMPZON",
+    "postal_code": "07120",
+    "source_url": "https://www.sandaya.fr/nos-campings/le-soleil-vivarais",
+    "browse_url": "https://www.sandaya.fr/nos-campings/le-soleil-vivarais",
+    "host": "www.sandaya.fr",
+    "slug": "183-camping-le-soleil-vivarais"
+  },
+  {
+    "row": 184,
+    "name": "CAMPING LE SÉRIGNAN PLAGE",
+    "city": "SÉRIGNAN",
+    "postal_code": "34410",
+    "source_url": "https://www.leserignanplage.com",
+    "browse_url": "https://www.leserignanplage.com",
+    "host": "www.leserignanplage.com",
+    "slug": "184-camping-le-serignan-plage"
+  },
+  {
+    "row": 185,
+    "name": "CAMPING LE TROPICANA",
+    "city": "SAINT-JEAN-DE-MONTS",
+    "postal_code": "85160",
+    "source_url": "http://www.le-tropicana.com",
+    "browse_url": "http://www.le-tropicana.com",
+    "host": "www.le-tropicana.com",
+    "slug": "185-camping-le-tropicana"
+  },
+  {
+    "row": 186,
+    "name": "CAMPING LE TY NADAN",
+    "city": "LOCUNOLÉ",
+    "postal_code": "29310",
+    "source_url": "https://www.homair.com/camping/ty-nadan",
+    "browse_url": "https://www.homair.com/camping/ty-nadan",
+    "host": "www.homair.com",
+    "slug": "186-camping-le-ty-nadan"
+  },
+  {
+    "row": 187,
+    "name": "CAMPING LE VAL D'AUTHIE",
+    "city": "VILLERS-SUR-AUTHIE",
+    "postal_code": "80120",
+    "source_url": "https://www.capfun.com/camping-france-picardie-val_authie-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-picardie-val_authie-FR.html",
+    "host": "www.capfun.com",
+    "slug": "187-camping-le-val-d-authie"
+  },
+  {
+    "row": 188,
+    "name": "CAMPING LE VIEUX PORT",
+    "city": "MESSANGES",
+    "postal_code": "40660",
+    "source_url": "https://www.levieuxport.com/",
+    "browse_url": "https://www.levieuxport.com/",
+    "host": "www.levieuxport.com",
+    "slug": "188-camping-le-vieux-port"
+  },
+  {
+    "row": 189,
+    "name": "CAMPING LE VILLAGE TROPICAL SEN-YAN",
+    "city": "MÉZOS",
+    "postal_code": "40170",
+    "source_url": "http://www.sen-yan.com",
+    "browse_url": "http://www.sen-yan.com",
+    "host": "www.sen-yan.com",
+    "slug": "189-camping-le-village-tropical-sen-yan"
+  },
+  {
+    "row": 190,
+    "name": "CAMPING LES 4 VENTS D'OLÉRON",
+    "city": "SAINT-GEORGES-D'OLÉRON",
+    "postal_code": "17190",
+    "source_url": "https://www.capfun.com/camping-france-poitou_charentes-quatre_vents-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-poitou_charentes-quatre_vents-FR.html",
+    "host": "www.capfun.com",
+    "slug": "190-camping-les-4-vents-d-oleron"
+  },
+  {
+    "row": 191,
+    "name": "CAMPING LES 7 SAINTS",
+    "city": "ERDEVEN",
+    "postal_code": "56410",
+    "source_url": "https://sept-saints.com/fr/",
+    "browse_url": "https://sept-saints.com/fr/",
+    "host": "sept-saints.com",
+    "slug": "191-camping-les-7-saints"
+  },
+  {
+    "row": 192,
+    "name": "CAMPING LES CALQUIÈRES",
+    "city": "SÉVÉRAC-LE-CHÂTEAU",
+    "postal_code": "12150",
+    "source_url": "www.camping-aveyron.fr",
+    "browse_url": "https://www.camping-aveyron.fr",
+    "host": "www.camping-aveyron.fr",
+    "slug": "192-camping-les-calquieres"
+  },
+  {
+    "row": 193,
+    "name": "CAMPING LES CHAMPS BLANCS",
+    "city": "AGDE",
+    "postal_code": "34300",
+    "source_url": "https://www.campingleschampsblancs.com/fr/",
+    "browse_url": "https://www.campingleschampsblancs.com/fr/",
+    "host": "www.campingleschampsblancs.com",
+    "slug": "193-camping-les-champs-blancs"
+  },
+  {
+    "row": 194,
+    "name": "CAMPING LES CHOUANS",
+    "city": "SAINT-HILAIRE-DE-RIEZ",
+    "postal_code": "85270",
+    "source_url": "https://www.clicochic.com/camping-loire-atlantique/chouans",
+    "browse_url": "https://www.clicochic.com/camping-loire-atlantique/chouans",
+    "host": "www.clicochic.com",
+    "slug": "194-camping-les-chouans"
+  },
+  {
+    "row": 195,
+    "name": "CAMPING LES CIGALES",
+    "city": "LE MUY",
+    "postal_code": "83490",
+    "source_url": "https://www.tikayan.com/fr/camping-les-cigales-accueil",
+    "browse_url": "https://www.tikayan.com/fr/camping-les-cigales-accueil",
+    "host": "www.tikayan.com",
+    "slug": "195-camping-les-cigales"
+  },
+  {
+    "row": 196,
+    "name": "CAMPING LES CRIQUES DE PORTEILS",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "https://www.lescriques.fr/",
+    "browse_url": "https://www.lescriques.fr/",
+    "host": "www.lescriques.fr",
+    "slug": "196-camping-les-criques-de-porteils"
+  },
+  {
+    "row": 197,
+    "name": "CAMPING LES DUNES",
+    "city": "BRETIGNOLLES-SUR-MER",
+    "postal_code": "85470",
+    "source_url": "https://www.campinglesdunes.fr/",
+    "browse_url": "https://www.campinglesdunes.fr/",
+    "host": "www.campinglesdunes.fr",
+    "slug": "197-camping-les-dunes"
+  },
+  {
+    "row": 198,
+    "name": "CAMPING LES DUNES",
+    "city": "TORREILLES",
+    "postal_code": "66440",
+    "source_url": "https://www.homair.com/camping/les-dunes",
+    "browse_url": "https://www.homair.com/camping/les-dunes",
+    "host": "www.homair.com",
+    "slug": "198-camping-les-dunes"
+  },
+  {
+    "row": 199,
+    "name": "CAMPING LES EMBRUNS",
+    "city": "CLOHARS-CARNOËT",
+    "postal_code": "29360",
+    "source_url": "https://www.camping-les-embruns.com/",
+    "browse_url": "https://www.camping-les-embruns.com/",
+    "host": "www.camping-les-embruns.com",
+    "slug": "199-camping-les-embruns"
+  },
+  {
+    "row": 200,
+    "name": "CAMPING LES FLAMANTS ROSES",
+    "city": "LE GRAU-DU-ROI",
+    "postal_code": "30240",
+    "source_url": "https://www.yellohvillage-lesflamantsroses.com/fr/",
+    "browse_url": "https://www.yellohvillage-lesflamantsroses.com/fr/",
+    "host": "www.yellohvillage-lesflamantsroses.com",
+    "slug": "200-camping-les-flamants-roses"
+  },
+  {
+    "row": 201,
+    "name": "CAMPING LES FONTAINES",
+    "city": "PERNES-LES-FONTAINES",
+    "postal_code": "84210",
+    "source_url": "https://www.campingfontaines.com/",
+    "browse_url": "https://www.campingfontaines.com/",
+    "host": "www.campingfontaines.com",
+    "slug": "201-camping-les-fontaines"
+  },
+  {
+    "row": 202,
+    "name": "CAMPING LES GENÊTS",
+    "city": "SAINT-JEAN-DE-MONTS",
+    "postal_code": "85160",
+    "source_url": "https://www.sunmarina.com/le-camping-les-genets/",
+    "browse_url": "https://www.sunmarina.com/le-camping-les-genets/",
+    "host": "www.sunmarina.com",
+    "slug": "202-camping-les-genets"
+  },
+  {
+    "row": 203,
+    "name": "CAMPING LES GENÊTS",
+    "city": "SALLES-CURAN",
+    "postal_code": "12410",
+    "source_url": "https://www.camping-les-genets.fr/fr/",
+    "browse_url": "https://www.camping-les-genets.fr/fr/",
+    "host": "www.camping-les-genets.fr",
+    "slug": "203-camping-les-genets"
+  },
+  {
+    "row": 204,
+    "name": "CAMPING LES GRENETTES",
+    "city": "SAINTE-MARIE-DE-RÉ",
+    "postal_code": "17740",
+    "source_url": "https://www.campinglesgrenettes.com/",
+    "browse_url": "https://www.campinglesgrenettes.com/",
+    "host": "www.campinglesgrenettes.com",
+    "slug": "204-camping-les-grenettes"
+  },
+  {
+    "row": 205,
+    "name": "CAMPING LES GROS JONCS",
+    "city": "SAINT-GEORGES-D'OLÉRON",
+    "postal_code": "17190",
+    "source_url": "https://www.camping-les-gros-joncs.com/",
+    "browse_url": "https://www.camping-les-gros-joncs.com/",
+    "host": "www.camping-les-gros-joncs.com",
+    "slug": "205-camping-les-gros-joncs"
+  },
+  {
+    "row": 206,
+    "name": "CAMPING LES GROSSES PIERRES",
+    "city": "SAINT-GEORGES-D'OLÉRON",
+    "postal_code": "17190",
+    "source_url": "http://www.camping-vagues-oceanes.com/camping-ile-oleron/grosses-pierres.html",
+    "browse_url": "http://www.camping-vagues-oceanes.com/camping-ile-oleron/grosses-pierres.html",
+    "host": "www.camping-vagues-oceanes.com",
+    "slug": "206-camping-les-grosses-pierres"
+  },
+  {
+    "row": 207,
+    "name": "CAMPING LES LACS",
+    "city": "SOULAC-SUR-MER",
+    "postal_code": "33780",
+    "source_url": "https://www.domainelescarrelets.com/",
+    "browse_url": "https://www.domainelescarrelets.com/",
+    "host": "www.domainelescarrelets.com",
+    "slug": "207-camping-les-lacs"
+  },
+  {
+    "row": 208,
+    "name": "CAMPING LES LACS DU VERDON",
+    "city": "RÉGUSSE",
+    "postal_code": "83630",
+    "source_url": "https://www.homair.com/camping/les-lacs-du-verdon",
+    "browse_url": "https://www.homair.com/camping/les-lacs-du-verdon",
+    "host": "www.homair.com",
+    "slug": "208-camping-les-lacs-du-verdon"
+  },
+  {
+    "row": 209,
+    "name": "CAMPING LES LOGES",
+    "city": "MESCHERS-SUR-GIRONDE",
+    "postal_code": "17132",
+    "source_url": "https://www.camping-les-loges.com/",
+    "browse_url": "https://www.camping-les-loges.com/",
+    "host": "www.camping-les-loges.com",
+    "slug": "209-camping-les-loges"
+  },
+  {
+    "row": 210,
+    "name": "CAMPING LES MARSOUINS",
+    "city": "ARGELÈS-SUR-MER",
+    "postal_code": "66700",
+    "source_url": "http://lesmarsouins.cielavillage.fr/",
+    "browse_url": "http://lesmarsouins.cielavillage.fr/",
+    "host": "lesmarsouins.cielavillage.fr",
+    "slug": "210-camping-les-marsouins"
+  },
+  {
+    "row": 211,
+    "name": "CAMPING LES MILLE PÉPITES",
+    "city": "CARNON",
+    "postal_code": "34280",
+    "source_url": "https://www.capfun.com/camping-france-languedoc_roussillon-mille_pepites-FR.html",
+    "browse_url": "https://www.capfun.com/camping-france-languedoc_roussillon-mille_pepites-FR.html",
+    "host": "www.capfun.com",
+    "slug": "211-camping-les-mille-pepites"
+  },
+  {
+    "row": 212,
+    "name": "CAMPING LES MIMOSAS",
+    "city": "PORTIRAGNES",
+    "postal_code": "34420",
+    "source_url": "https://www.mimosas.com/fr/",
+    "browse_url": "https://www.mimosas.com/fr/",
+    "host": "www.mimosas.com",
+    "slug": "212-camping-les-mimosas"
+  },
+  {
+    "row": 213,
+    "name": "CAMPING LES MOUETTES",
+    "city": "CARANTEC",
+    "postal_code": "29660",
+    "source_url": "https://www.les-mouettes.com/",
+    "browse_url": "https://www.les-mouettes.com/",
+    "host": "www.les-mouettes.com",
+    "slug": "213-camping-les-mouettes"
+  },
+  {
+    "row": 214,
+    "name": "CAMPING LES PETITS CAMARGUAIS",
+    "city": "LE GRAU-DU-ROI",
+    "postal_code": "30240",
+    "source_url": "http://www.yellohvillage-petits-camarguais.com",
+    "browse_url": "http://www.yellohvillage-petits-camarguais.com",
+    "host": "www.yellohvillage-petits-camarguais.com",
+    "slug": "214-camping-les-petits-camarguais"
+  },
+  {
+    "row": 215,
+    "name": "CAMPING LES PIRONS",
+    "city": "CHÂTEAU-D'OLONNE",
+    "postal_code": "85180",
+    "source_url": "https://www.aloa-vacances.com/les-pirons/accueil/",
+    "browse_url": "https://www.aloa-vacances.com/les-pirons/accueil/",
+    "host": "www.aloa-vacances.com",
+    "slug": "215-camping-les-pirons"
+  },
+  {
+    "row": 216,
+    "name": "CAMPING LES PLACES DORÉES",
+    "city": "SAINT-JEAN-DE-MONTS",
+    "postal_code": "85160",
+    "source_url": "https://www.placesdorees.com/",
+    "browse_url": "https://www.placesdorees.com/",
+    "host": "www.placesdorees.com",
+    "slug": "216-camping-les-places-dorees"
+  },
+  {
+    "row": 217,
+    "name": "CAMPING LES PRAIRIES DE LA MER",
+    "city": "GRIMAUD",
+    "postal_code": "83310",
+    "source_url": "https://www.riviera-villages.com/Les-Prairies-de-la-Mer",
+    "browse_url": "https://www.riviera-villages.com/Les-Prairies-de-la-Mer",
+    "host": "www.riviera-villages.com",
+    "slug": "217-camping-les-prairies-de-la-mer"
+  },
+  {
+    "row": 218,
+    "name": "CAMPING LES PÉNEYRALS",
+    "city": "SAINT-CRÉPIN-ET-CARLUCET",
+    "postal_code": "24590",
+    "source_url": "https://www.sandaya.fr/nos-campings/peneyrals",
+    "browse_url": "https://www.sandaya.fr/nos-campings/peneyrals",
+    "host": "www.sandaya.fr",
+    "slug": "218-camping-les-peneyrals"
+  },
+  {
+    "row": 219,
+    "name": "CAMPING LES SABLONS",
+    "city": "PORTIRAGNES - PLAGE",
+    "postal_code": "34420",
+    "source_url": "http://les-sablons.com",
+    "browse_url": "http://les-sablons.com",
+    "host": "les-sablons.com",
+    "slug": "219-camping-les-sablons"
+  },
+  {
+    "row": 220,
+    "name": "CAMPING LES TAMARIS",
+    "city": "FRONTIGNAN",
+    "postal_code": "34110",
+    "source_url": "https://www.sandaya.fr/nos-campings/les-tamaris",
+    "browse_url": "https://www.sandaya.fr/nos-campings/les-tamaris",
+    "host": "www.sandaya.fr",
+    "slug": "220-camping-les-tamaris"
+  },
+  {
+    "row": 221,
+    "name": "CAMPING LES TOURNELS",
+    "city": "RAMATUELLE",
+    "postal_code": "83350",
+    "source_url": "https://www.tournels.com/",
+    "browse_url": "https://www.tournels.com/",
+    "host": "www.tournels.com",
+    "slug": "221-camping-les-tournels"
+  },
+  {
+    "row": 222,
+    "name": "CAMPING LES TROIS VALLÉES",
+    "city": "ARGELÈS-GAZOST",
+    "postal_code": "65400",
+    "source_url": "http://www.camping3vallees.com",
+    "browse_url": "http://www.camping3vallees.com",
+    "host": "www.camping3vallees.com",
+    "slug": "222-camping-les-trois-vallees"
+  },
+  {
+    "row": 223,
+    "name": "CAMPING LES VERNIÈRES",
+    "city": "LA BOURBOULE",
+    "postal_code": "63150",
+    "source_url": "https://camping-la-bourboule.fr/",
+    "browse_url": "https://camping-la-bourboule.fr/",
+    "host": "camping-la-bourboule.fr",
+    "slug": "223-camping-les-vernieres"
+  },
+  {
+    "row": 224,
+    "name": "CAMPING LES VIGNES",
+    "city": "LIT-ET-MIXE",
+    "postal_code": "40170",
+    "source_url": "https://www.homair.com/camping/les-vignes",
+    "browse_url": "https://www.homair.com/camping/les-vignes",
+    "host": "www.homair.com",
+    "slug": "224-camping-les-vignes"
+  },
+  {
+    "row": 225,
+    "name": "CAMPING LODGE",
+    "city": "SARZEAU",
+    "postal_code": "56370",
+    "source_url": "https://www.lodgeclub.fr/",
+    "browse_url": "https://www.lodgeclub.fr/",
+    "host": "www.lodgeclub.fr",
+    "slug": "225-camping-lodge"
+  },
+  {
+    "row": 226,
+    "name": "CAMPING LOU PIGNADA",
+    "city": "MESSANGES",
+    "postal_code": "40660",
+    "source_url": "https://www.homair.com/camping/lou-pignada",
+    "browse_url": "https://www.homair.com/camping/lou-pignada",
+    "host": "www.homair.com",
+    "slug": "226-camping-lou-pignada"
+  },
+  {
+    "row": 227,
+    "name": "CAMPING LOUS SEURROTS",
+    "city": "SAINT-JULIEN-EN-BORN",
+    "postal_code": "40170",
+    "source_url": "https://www.lous-seurrots.com/fr/",
+    "browse_url": "https://www.lous-seurrots.com/fr/",
+    "host": "www.lous-seurrots.com",
+    "slug": "227-camping-lous-seurrots"
+  },
+  {
+    "row": 228,
+    "name": "CAMPING LUBÉRON PARC",
+    "city": "CHARLEVAL",
+    "postal_code": "13350",
+    "source_url": "https://www.campingluberonparc.fr/fr",
+    "browse_url": "https://www.campingluberonparc.fr/fr",
+    "host": "www.campingluberonparc.fr",
+    "slug": "228-camping-luberon-parc"
+  },
+  {
+    "row": 229,
+    "name": "CAMPING MANÉ GUERNEHUÉ",
+    "city": "BADEN",
+    "postal_code": "56870",
+    "source_url": "http://camping-baden.com",
+    "browse_url": "http://camping-baden.com",
+    "host": "camping-baden.com",
+    "slug": "229-camping-mane-guernehue"
+  },
+  {
+    "row": 230,
+    "name": "CAMPING MAS DE PIERREDON",
+    "city": "SANARY-SUR-MER",
+    "postal_code": "83110",
+    "source_url": "https://www.campasun.eu/pierredon/",
+    "browse_url": "https://www.campasun.eu/pierredon/",
+    "host": "www.campasun.eu",
+    "slug": "230-camping-mas-de-pierredon"
+  },
+  {
+    "row": 231,
+    "name": "CAMPING MAYOTTE VACANCES",
+    "city": "BISCARROSSE",
+    "postal_code": "40600",
+    "source_url": "https://www.homair.com/camping/mayotte-vacances",
+    "browse_url": "https://www.homair.com/camping/mayotte-vacances",
+    "host": "www.homair.com",
+    "slug": "231-camping-mayotte-vacances"
+  },
+  {
+    "row": 232,
+    "name": "CAMPING MER ET SOLEIL D'OLÉRON",
+    "city": "SAINT-GEORGES-D'OLÉRON",
+    "postal_code": "17190",
+    "source_url": "https://siblu.fr/camping/france/cote-atlantique-sud/nouvelle-aquitaine/mer-et-soleil-doleron",
+    "browse_url": "https://siblu.fr/camping/france/cote-atlantique-sud/nouvelle-aquitaine/mer-et-soleil-doleron",
+    "host": "siblu.fr",
+    "slug": "232-camping-mer-et-soleil-d-oleron"
+  },
+  {
+    "row": 233,
+    "name": "CAMPING MER ET VACANCES",
+    "city": "LANGRUNE-SUR-MER",
+    "postal_code": "14830",
+    "source_url": "https://www.meretvacances.fr/",
+    "browse_url": "https://www.meretvacances.fr/",
+    "host": "www.meretvacances.fr",
+    "slug": "233-camping-mer-et-vacances"
+  },
+  {
+    "row": 234,
+    "name": "CAMPING MÉDOC OCÉAN",
+    "city": "VENSAC",
+    "postal_code": "33590",
+    "source_url": "https://www.yellohvillage-medococean.com/fr/",
+    "browse_url": "https://www.yellohvillage-medococean.com/fr/",
+    "host": "www.yellohvillage-medococean.com",
+    "slug": "234-camping-medoc-ocean"
+  },
+  {
+    "row": 235,
+    "name": "CAMPING NANTES",
+    "city": "NANTES",
+    "postal_code": "44300",
+    "source_url": "http://www.nantes-camping.fr",
+    "browse_url": "http://www.nantes-camping.fr",
+    "host": "www.nantes-camping.fr",
+    "slug": "235-camping-nantes"
+  },
+  {
+    "row": 236,
+    "name": "CAMPING NATURE PARC L'ARDECHOIS",
+    "city": "VALLON-PONT-D'ARC",
+    "postal_code": "07150",
+    "source_url": "http://www.ardechois-camping.com",
+    "browse_url": "http://www.ardechois-camping.com",
+    "host": "www.ardechois-camping.com",
+    "slug": "236-camping-nature-parc-l-ardechois"
+  },
+  {
+    "row": 237,
+    "name": "CAMPING NOUVELLE FLORIDE LES MÉDITERRANÉES",
+    "city": "MARSEILLAN",
+    "postal_code": "34340",
+    "source_url": "https://www.lesmediterranees.com/camping-nouvelle-floride-marseillan-plage",
+    "browse_url": "https://www.lesmediterranees.com/camping-nouvelle-floride-marseillan-plage",
+    "host": "www.lesmediterranees.com",
+    "slug": "237-camping-nouvelle-floride-les-mediterranees"
+  },
+  {
+    "row": 238,
+    "name": "CAMPING OASIS VILLAGE",
+    "city": "PUGET-SUR-ARGENS",
+    "postal_code": "83480",
+    "source_url": "https://www.camping-parcsaintjames.com/",
+    "browse_url": "https://www.camping-parcsaintjames.com/",
+    "host": "www.camping-parcsaintjames.com",
+    "slug": "238-camping-oasis-village"
+  },
+  {
+    "row": 239,
+    "name": "CAMPING PARC DE FIERBOIS",
+    "city": "SAINTE-CATHERINE-DE-FIERBOIS",
+    "postal_code": "37800",
+    "source_url": "https://www.fierbois.com/",
+    "browse_url": "https://www.fierbois.com/",
+    "host": "www.fierbois.com",
+    "slug": "239-camping-parc-de-fierbois"
+  },
+  {
+    "row": 240,
+    "name": "CAMPING PARC SAINTE BRIGITTE",
+    "city": "LA TURBALLE",
+    "postal_code": "44420",
+    "source_url": "https://www.yellohvillage.fr/camping/parc_sainte_brigitte#content",
+    "browse_url": "https://www.yellohvillage.fr/camping/parc_sainte_brigitte#content",
+    "host": "www.yellohvillage.fr",
+    "slug": "240-camping-parc-sainte-brigitte"
+  },
+  {
+    "row": 241,
+    "name": "CAMPING PORT DE PLAISANCE",
+    "city": "CLOHARS-FOUESNANT",
+    "postal_code": "29950",
+    "source_url": "https://www.homair.com/camping/port-de-plaisance",
+    "browse_url": "https://www.homair.com/camping/port-de-plaisance",
+    "host": "www.homair.com",
+    "slug": "241-camping-port-de-plaisance"
+  },
+  {
+    "row": 242,
+    "name": "CAMPING PORTLAND",
+    "city": "PORT-EN-BESSIN-HUPPAIN",
+    "postal_code": "14520",
+    "source_url": "https://www.yellohvillage.fr/camping/portland",
+    "browse_url": "https://www.yellohvillage.fr/camping/portland",
+    "host": "www.yellohvillage.fr",
+    "slug": "242-camping-portland"
+  },
+  {
+    "row": 243,
+    "name": "CAMPING PRESQU'ILE DE CHAMPAUBERT",
+    "city": "ÉCLARON-BRAUCOURT-SAINTE-LIVIÈRE",
+    "postal_code": "52290",
+    "source_url": "https://lescampingsduder.com/",
+    "browse_url": "https://lescampingsduder.com/",
+    "host": "lescampingsduder.com",
+    "slug": "243-camping-presqu-ile-de-champaubert"
+  },
+  {
+    "row": 244,
+    "name": "CAMPING RCN LA BASTIDE EN ARDÈCHE",
+    "city": "SAMPZON",
+    "postal_code": "07120",
+    "source_url": "https://www.rcn.nl/fr/camping/france/ardeche/rcn-la-bastide-en-ardeche",
+    "browse_url": "https://www.rcn.nl/fr/camping/france/ardeche/rcn-la-bastide-en-ardeche",
+    "host": "www.rcn.nl",
+    "slug": "244-camping-rcn-la-bastide-en-ardeche"
+  },
+  {
+    "row": 245,
+    "name": "CAMPING RCN VAL DE CANTOBRE",
+    "city": "NANT",
+    "postal_code": "12230",
+    "source_url": "https://www.rcn.nl/fr/camping/france/aveyron/rcn-val-de-cantobre",
+    "browse_url": "https://www.rcn.nl/fr/camping/france/aveyron/rcn-val-de-cantobre",
+    "host": "www.rcn.nl",
+    "slug": "245-camping-rcn-val-de-cantobre"
+  },
+  {
+    "row": 246,
+    "name": "CAMPING SAINT AVIT LOISIRS",
+    "city": "SAINT-AVIT-DE-VIALARD",
+    "postal_code": "24260",
+    "source_url": "https://www.homair.com/camping/saint-avit-loisirs",
+    "browse_url": "https://www.homair.com/camping/saint-avit-loisirs",
+    "host": "www.homair.com",
+    "slug": "246-camping-saint-avit-loisirs"
+  },
+  {
+    "row": 247,
+    "name": "CAMPING SANDAYA DOUCE QUIÉTUDE",
+    "city": "SAINT-RAPHAËL",
+    "postal_code": "83700",
+    "source_url": "https://www.sandaya.fr/nos-campings/douce-quietude",
+    "browse_url": "https://www.sandaya.fr/nos-campings/douce-quietude",
+    "host": "www.sandaya.fr",
+    "slug": "247-camping-sandaya-douce-quietude"
+  },
+  {
+    "row": 248,
+    "name": "CAMPING SANDAYA L'ESTANQUET",
+    "city": "LES MATHES",
+    "postal_code": "17570",
+    "source_url": "https://www.sandaya.fr/nos-campings/l-estanquet",
+    "browse_url": "https://www.sandaya.fr/nos-campings/l-estanquet",
+    "host": "www.sandaya.fr",
+    "slug": "248-camping-sandaya-l-estanquet"
+  },
+  {
+    "row": 249,
+    "name": "CAMPING SANDAYA LA RIBEYRE",
+    "city": "MUROL",
+    "postal_code": "63790",
+    "source_url": "https://www.sandaya.fr/nos-campings/la-ribeyre",
+    "browse_url": "https://www.sandaya.fr/nos-campings/la-ribeyre",
+    "host": "www.sandaya.fr",
+    "slug": "249-camping-sandaya-la-ribeyre"
+  },
+  {
+    "row": 250,
+    "name": "CAMPING SANDAYA LAC DE SANGUINET",
+    "city": "SANGUINET",
+    "postal_code": "40460",
+    "source_url": "https://www.sandaya.fr/nos-campings/lac-de-sanguinet",
+    "browse_url": "https://www.sandaya.fr/nos-campings/lac-de-sanguinet",
+    "host": "www.sandaya.fr",
+    "slug": "250-camping-sandaya-lac-de-sanguinet"
+  },
+  {
+    "row": 251,
+    "name": "CAMPING SANDAYA LE GRAND DAGUE",
+    "city": "BOULAZAC ISLE MANOIRE",
+    "postal_code": "24750",
+    "source_url": "https://www.sandaya.fr/nos-campings/le-grand-dague?_gl=1*737awe*_up*MQ..*_ga*ODQ4MTY2Mjc5LjE3MjEwMzEzOTI.*_ga_YK551KD2DR*MTcyMTAzMTM5MS4xLjAuMTcyMTAzMTQwNy4wLjAuMTQxODg5Nzk2OA..",
+    "browse_url": "https://www.sandaya.fr/nos-campings/le-grand-dague?_gl=1*737awe*_up*MQ..*_ga*ODQ4MTY2Mjc5LjE3MjEwMzEzOTI.*_ga_YK551KD2DR*MTcyMTAzMTM5MS4xLjAuMTcyMTAzMTQwNy4wLjAuMTQxODg5Nzk2OA..",
+    "host": "www.sandaya.fr",
+    "slug": "251-camping-sandaya-le-grand-dague"
+  },
+  {
+    "row": 252,
+    "name": "CAMPING SANDAYA LE LITTORAL",
+    "city": "TALMONT-SAINT-HILAIRE",
+    "postal_code": "85440",
+    "source_url": "https://www.sandaya.fr/nos-campings/le-littoral",
+    "browse_url": "https://www.sandaya.fr/nos-campings/le-littoral",
+    "host": "www.sandaya.fr",
+    "slug": "252-camping-sandaya-le-littoral"
+  },
+  {
+    "row": 253,
+    "name": "CAMPING SANDAYA LE RANOLIEN",
+    "city": "PERROS-GUIREC",
+    "postal_code": "22700",
+    "source_url": "https://www.sandaya.fr/nos-campings/le-ranolien",
+    "browse_url": "https://www.sandaya.fr/nos-campings/le-ranolien",
+    "host": "www.sandaya.fr",
+    "slug": "253-camping-sandaya-le-ranolien"
+  },
+  {
+    "row": 254,
+    "name": "CAMPING SANDAYA LES ALICOURTS",
+    "city": "PIERREFITTE-SUR-SAULDRE",
+    "postal_code": "41300",
+    "source_url": "https://www.sandaya.fr/nos-campings/les-alicourts",
+    "browse_url": "https://www.sandaya.fr/nos-campings/les-alicourts",
+    "host": "www.sandaya.fr",
+    "slug": "254-camping-sandaya-les-alicourts"
+  },
+  {
+    "row": 255,
+    "name": "CAMPING SANDAYA LES MATHES",
+    "city": "LES MATHES",
+    "postal_code": "17570",
+    "source_url": "https://www.sandaya.fr/nos-campings/les-mathes",
+    "browse_url": "https://www.sandaya.fr/nos-campings/les-mathes",
+    "host": "www.sandaya.fr",
+    "slug": "255-camping-sandaya-les-mathes"
+  },
+  {
+    "row": 256,
+    "name": "CAMPING SANDAYA RIVIERA D'AZUR",
+    "city": "FRÉJUS",
+    "postal_code": "83370",
+    "source_url": "https://www.sandaya.fr/nos-campings/riviera-d-azur",
+    "browse_url": "https://www.sandaya.fr/nos-campings/riviera-d-azur",
+    "host": "www.sandaya.fr",
+    "slug": "256-camping-sandaya-riviera-d-azur"
+  },
+  {
+    "row": 257,
+    "name": "CAMPING SANDAYA SOUSTONS VILLAGE",
+    "city": "SOUSTONS",
+    "postal_code": "40140",
+    "source_url": "https://www.sandaya.fr/nos-campings/soustons-village",
+    "browse_url": "https://www.sandaya.fr/nos-campings/soustons-village",
+    "host": "www.sandaya.fr",
+    "slug": "257-camping-sandaya-soustons-village"
+  },
+  {
+    "row": 258,
+    "name": "CAMPING SIGNOL",
+    "city": "SAINT-GEORGES-D'OLÉRON",
+    "postal_code": "17190",
+    "source_url": "https://www.olela.fr/campings/camping-signol",
+    "browse_url": "https://www.olela.fr/campings/camping-signol",
+    "host": "www.olela.fr",
+    "slug": "258-camping-signol"
+  },
+  {
+    "row": 259,
+    "name": "CAMPING SLOW VILLAGE PROVENCE OCCITANIE",
+    "city": "LA ROQUE-SUR-CÈZE",
+    "postal_code": "30200",
+    "source_url": "https://www.slow-village.com/destinations/occitanie/la-roque-sur-ceze/",
+    "browse_url": "https://www.slow-village.com/destinations/occitanie/la-roque-sur-ceze/",
+    "host": "www.slow-village.com",
+    "slug": "259-camping-slow-village-provence-occitanie"
+  },
+  {
+    "row": 260,
+    "name": "CAMPING SUNÊLIA DOMAINE DE CHAMPÉ",
+    "city": "BUSSANG",
+    "postal_code": "88540",
+    "source_url": "www.domaine-de-champe.com",
+    "browse_url": "https://www.domaine-de-champe.com",
+    "host": "www.domaine-de-champe.com",
+    "slug": "260-camping-sunelia-domaine-de-champe"
+  },
+  {
+    "row": 261,
+    "name": "CAMPING SUNÊLIA INTERLUDE",
+    "city": "LE BOIS-PLAGE-EN-RÉ",
+    "postal_code": "17580",
+    "source_url": "https://www.interlude.fr/",
+    "browse_url": "https://www.interlude.fr/",
+    "host": "www.interlude.fr",
+    "slug": "261-camping-sunelia-interlude"
+  },
+  {
+    "row": 262,
+    "name": "CAMPING SYLVAMAR",
+    "city": "LABENNE",
+    "postal_code": "40530",
+    "source_url": "http://www.camping-sylvamar.com/fr/",
+    "browse_url": "http://www.camping-sylvamar.com/fr/",
+    "host": "www.camping-sylvamar.com",
+    "slug": "262-camping-sylvamar"
+  },
+  {
+    "row": 263,
+    "name": "CAMPING SÉQUOIA PARC",
+    "city": "SAINT-JUST-LUZAC",
+    "postal_code": "17320",
+    "source_url": "http://www..sandaya.fr",
+    "browse_url": "http://www..sandaya.fr",
+    "host": "www..sandaya.fr",
+    "slug": "263-camping-sequoia-parc"
+  },
+  {
+    "row": 264,
+    "name": "CAMPING TERRA VERDON",
+    "city": "CASTELLANE",
+    "postal_code": "04120",
+    "source_url": "https://camping-terra-verdon.com/",
+    "browse_url": "https://camping-terra-verdon.com/",
+    "host": "camping-terra-verdon.com",
+    "slug": "264-camping-terra-verdon"
+  },
+  {
+    "row": 265,
+    "name": "CAMPING TOHAPI ATLANTIC CLUB MONTALIVET",
+    "city": "VENDAYS-MONTALIVET",
+    "postal_code": "33930",
+    "source_url": "www.campingacm.fr",
+    "browse_url": "https://www.campingacm.fr",
+    "host": "www.campingacm.fr",
+    "slug": "265-camping-tohapi-atlantic-club-montalivet"
+  },
+  {
+    "row": 266,
+    "name": "CAMPING VERDON PARC",
+    "city": "GRÉOUX-LES-BAINS",
+    "postal_code": "04800",
+    "source_url": "https://www.homair.com/camping/verdon-parc",
+    "browse_url": "https://www.homair.com/camping/verdon-parc",
+    "host": "www.homair.com",
+    "slug": "266-camping-verdon-parc"
+  },
+  {
+    "row": 267,
+    "name": "CAMPING VILLAGE DE LA GUYONNIÈRE",
+    "city": "SAINT-JULIEN-DES-LANDES",
+    "postal_code": "85150",
+    "source_url": "https://www.camping-guyonniere.com/",
+    "browse_url": "https://www.camping-guyonniere.com/",
+    "host": "www.camping-guyonniere.com",
+    "slug": "267-camping-village-de-la-guyonniere"
+  },
+  {
+    "row": 268,
+    "name": "CAMPING VILLAGE NATURÉO",
+    "city": "SEIGNOSSE",
+    "postal_code": "40510",
+    "source_url": "http://www.village-natureo.com",
+    "browse_url": "http://www.village-natureo.com",
+    "host": "www.village-natureo.com",
+    "slug": "268-camping-village-natureo"
+  },
+  {
+    "row": 269,
+    "name": "CAMPING YELLOH ! VILLAGE EN CHAMPAGNE LES SOURCES DU LAC",
+    "city": "ÉCLARON-BRAUCOURT-SAINTE-LIVIÈRE",
+    "postal_code": "52290",
+    "source_url": "https://www.yellohvillage.fr/camping/yelloh_en_champagne?utm_source=google&utm_medium=organic&utm_campaign=MyBusiness",
+    "browse_url": "https://www.yellohvillage.fr/camping/yelloh_en_champagne?utm_source=google&utm_medium=organic&utm_campaign=MyBusiness",
+    "host": "www.yellohvillage.fr",
+    "slug": "269-camping-yelloh-village-en-champagne-les-sources-du-lac"
+  },
+  {
+    "row": 270,
+    "name": "CAMPING YELLOH ! VILLAGE LA PLAINE",
+    "city": "RUOMS",
+    "postal_code": "07120",
+    "source_url": "https://www.camping-la-plaine.com/fr/",
+    "browse_url": "https://www.camping-la-plaine.com/fr/",
+    "host": "www.camping-la-plaine.com",
+    "slug": "270-camping-yelloh-village-la-plaine"
+  },
+  {
+    "row": 271,
+    "name": "CAMPING YELLOH ! VILLAGE LAC DES 3 VALLÉES",
+    "city": "LECTOURE",
+    "postal_code": "32700",
+    "source_url": "http://www.lacdes3vallees.fr/",
+    "browse_url": "http://www.lacdes3vallees.fr/",
+    "host": "www.lacdes3vallees.fr",
+    "slug": "271-camping-yelloh-village-lac-des-3-vallees"
+  },
+  {
+    "row": 272,
+    "name": "CAMPING YELLOH ! VILLAGE LES GRANDS PINS",
+    "city": "LACANAU",
+    "postal_code": "33680",
+    "source_url": "https://www.lesgrandspins.com/fr/",
+    "browse_url": "https://www.lesgrandspins.com/fr/",
+    "host": "www.lesgrandspins.com",
+    "slug": "272-camping-yelloh-village-les-grands-pins"
+  },
+  {
+    "row": 273,
+    "name": "CAMPING YELLOH ! VILLAGE PARC DU VAL DE LOIRE",
+    "city": "MESLAND",
+    "postal_code": "41150",
+    "source_url": "http://www.parcduvaldeloire.com",
+    "browse_url": "http://www.parcduvaldeloire.com",
+    "host": "www.parcduvaldeloire.com",
+    "slug": "273-camping-yelloh-village-parc-du-val-de-loire"
+  },
+  {
+    "row": 274,
+    "name": "CAMPING YELLOH ! VILLAGE SECRETS DE CAMARGUE",
+    "city": "LE GRAU-DU-ROI",
+    "postal_code": "30240",
+    "source_url": "https://www.secretsdecamargue.com/fr/",
+    "browse_url": "https://www.secretsdecamargue.com/fr/",
+    "host": "www.secretsdecamargue.com",
+    "slug": "274-camping-yelloh-village-secrets-de-camargue"
+  },
+  {
+    "row": 275,
+    "name": "CAMPING YELLOH! VILLAGE SAINT PABU PLAGE",
+    "city": "ERQUY",
+    "postal_code": "22430",
+    "source_url": "https://www.saintpabu.com/",
+    "browse_url": "https://www.saintpabu.com/",
+    "host": "www.saintpabu.com",
+    "slug": "275-camping-yelloh-village-saint-pabu-plage"
+  },
+  {
+    "row": 276,
+    "name": "CAMPING À LA CORNICHE",
+    "city": "ANGOULINS",
+    "postal_code": "17690",
+    "source_url": "https://www.camping-la-rochelle-alacorniche.com/",
+    "browse_url": "https://www.camping-la-rochelle-alacorniche.com/",
+    "host": "www.camping-la-rochelle-alacorniche.com",
+    "slug": "276-camping-a-la-corniche"
+  },
+  {
+    "row": 277,
+    "name": "CAMPING ÉMERAUDE",
+    "city": "SAINT-BRIAC-SUR-MER",
+    "postal_code": "35800",
+    "source_url": "https://www.campingemeraude.com/",
+    "browse_url": "https://www.campingemeraude.com/",
+    "host": "www.campingemeraude.com",
+    "slug": "277-camping-emeraude"
+  },
+  {
+    "row": 278,
+    "name": "CHÂTEAU DE FONRIVES",
+    "city": "RIVES",
+    "postal_code": "47210",
+    "source_url": "https://www.homair.com/camping/chateau-de-fonrives",
+    "browse_url": "https://www.homair.com/camping/chateau-de-fonrives",
+    "host": "www.homair.com",
+    "slug": "278-chateau-de-fonrives"
+  },
+  {
+    "row": 279,
+    "name": "DOMAINE LES RANCHISSES",
+    "city": "CHASSIERS",
+    "postal_code": "07110",
+    "source_url": "https://www.lesranchisses.fr/",
+    "browse_url": "https://www.lesranchisses.fr/",
+    "host": "www.lesranchisses.fr",
+    "slug": "279-domaine-les-ranchisses"
+  },
+  {
+    "row": 280,
+    "name": "DOMAINE PRESQU'ÎLE DE LA FRANQUI",
+    "city": "LEUCATE",
+    "postal_code": "11370",
+    "source_url": "https://www.viglamo.com/",
+    "browse_url": "https://www.viglamo.com/",
+    "host": "www.viglamo.com",
+    "slug": "280-domaine-presqu-ile-de-la-franqui"
+  },
+  {
+    "row": 281,
+    "name": "DOMAINE TERRE D'OLIVIERS",
+    "city": "MONTICELLO",
+    "postal_code": "20220",
+    "source_url": "https://campingterredoliviers.com",
+    "browse_url": "https://campingterredoliviers.com",
+    "host": "campingterredoliviers.com",
+    "slug": "281-domaine-terre-d-oliviers"
+  },
+  {
+    "row": 282,
+    "name": "EDEN VILLAGES LES TRUFFIÈRES DE DORDOGNE",
+    "city": "SAINT-GENIÈS",
+    "postal_code": "24590",
+    "source_url": "https://www.eden-villages.fr/campings/labouquerie/",
+    "browse_url": "https://www.eden-villages.fr/campings/labouquerie/",
+    "host": "www.eden-villages.fr",
+    "slug": "282-eden-villages-les-truffieres-de-dordogne"
+  },
+  {
+    "row": 283,
+    "name": "L'ARDECHOIS CAMPING",
+    "city": "GLUIRAS",
+    "postal_code": "07190",
+    "source_url": "http://www.ardechois-camping.fr",
+    "browse_url": "http://www.ardechois-camping.fr",
+    "host": "www.ardechois-camping.fr",
+    "slug": "283-l-ardechois-camping"
+  },
+  {
+    "row": 284,
+    "name": "SLOW VILLAGE SÉVEILLES",
+    "city": "COUX-ET-BIGAROQUE",
+    "postal_code": "24220",
+    "source_url": "https://www.slow-village.com/destinations/nouvelle-aquitaine/seveilles/",
+    "browse_url": "https://www.slow-village.com/destinations/nouvelle-aquitaine/seveilles/",
+    "host": "www.slow-village.com",
+    "slug": "284-slow-village-seveilles"
+  }
+]
