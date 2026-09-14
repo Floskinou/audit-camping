@@ -1,0 +1,58 @@
+// Audit Camping — interactions
+(function () {
+  'use strict';
+
+  const filterInput = document.getElementById('filter-camping');
+  const filterRegion = document.getElementById('filter-region');
+  const filterScore = document.getElementById('filter-score');
+  const cards = Array.from(document.querySelectorAll('.camping-card'));
+  const counter = document.getElementById('results-count');
+  const emptyState = document.getElementById('empty-state');
+
+  function matchesScore(card, selected) {
+    if (selected === 'all') return true;
+    const score = card.dataset.score;
+    if (selected === 'na') return score === 'na';
+    if (score === 'na') return false;
+    const value = Number(score);
+    if (selected === 'low') return value <= 3;
+    if (selected === 'mid') return value >= 4 && value <= 6;
+    if (selected === 'high') return value >= 7;
+    return true;
+  }
+
+  function filterCards() {
+    const query = (filterInput ? filterInput.value : '').toLowerCase().trim();
+    const region = filterRegion ? filterRegion.value : 'all';
+    const selectedScore = filterScore ? filterScore.value : 'all';
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const haystack = (card.dataset.name || '').toLowerCase();
+      const cardRegion = card.dataset.region || '';
+      const matchesQuery = !query || haystack.includes(query);
+      const matchesRegion = region === 'all' || cardRegion === region;
+      const show = matchesQuery && matchesRegion && matchesScore(card, selectedScore);
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+
+    if (counter) counter.textContent = `${visible} camping${visible > 1 ? 's' : ''}`;
+    if (emptyState) emptyState.hidden = visible !== 0;
+  }
+
+  if (filterInput) filterInput.addEventListener('input', filterCards);
+  if (filterRegion) filterRegion.addEventListener('change', filterCards);
+  if (filterScore) filterScore.addEventListener('change', filterCards);
+  filterCards();
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+})();
