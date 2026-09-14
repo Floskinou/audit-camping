@@ -1,0 +1,10 @@
+# Raw browser captures and GTM container dumps: large evidence files kept out of git.
+# The audit itself is committed as audit-final.json (one record per CSV row).
+redo/
+audit-batches/
+audit-results/
+__pycache__/
+scripts/__pycache__/
+.chrome-audit-profile/
+journey-raw-reps.json
+journey-batches/
