@@ -1,0 +1,136 @@
+{
+  "audit_date": "2026-09-14",
+  "scope": "Parcours publics réels jusqu'à l'étape de recherche/disponibilités, sans coordonnées, confirmation, paiement ni réservation.",
+  "method": [
+    "Charger la page camping dans Chrome réel.",
+    "Suivre le CTA Réserver / Tarifs et disponibilités lorsqu'il est rendu.",
+    "Charger le moteur de réservation externe ou la page de recherche.",
+    "Cliquer au maximum sur une action non transactionnelle : recherche, disponibilités ou détail d'offre.",
+    "Lire les URLs réseau, les dataLayer et les événements GA4/Google Ads visibles.",
+    "Ne jamais soumettre une commande ni renseigner de données personnelles ou de paiement."
+  ],
+  "conclusion": {
+    "purchase_confirmed": false,
+    "purchase_not_confirmed_reason": "Aucune transaction de test ne peut être considérée comme une commande confirmée sans branche de succès réelle et transaction_id/value/currency. Aucun des parcours contrôlés n'a fourni cette preuve.",
+    "critical_findings": 14,
+    "critical_finding_definition": "Requête Google Ads /conversion avec bttype=purchase et value=0 observée sur une page publique avant réservation.",
+    "journey_representatives": 7,
+    "result_to_cart_checks": 2
+  },
+  "journeys": [
+    {
+      "label": "SecureHoliday",
+      "camping": "Camping Acapulco",
+      "home_url": "https://www.camping-acapulco.net/",
+      "engine_url": "https://reservation.secureholiday.net/fr/403/",
+      "steps": ["Accueil chargé", "CTA Réserver suivi", "Onglet Hébergements chargé", "Tarifs / disponibilités ouvert"],
+      "observations": [
+        "Le moteur affiche : La réservation en ligne est actuellement fermée.",
+        "Le dataLayer du moteur contient une entrée mais aucun événement métier.",
+        "Aucun hit GA4, Google Ads conversion ou événement purchase n'a été observé sur le moteur."
+      ],
+      "verdict": "Tunnel bloqué au niveau des disponibilités ; remontée de réservation non démontrable et liaison tracking site → moteur absente dans ce test."
+    },
+    {
+      "label": "Yelloh",
+      "camping": "Au Lac de Biscarrosse",
+      "home_url": "https://camping-lac-de-biscarrosse.com/fr/",
+      "engine_url": "https://booking.yellohvillage.com/formulaire.php?camping=lacbiscar&lang=fr",
+      "steps": ["Accueil chargé", "CTA Réserver suivi", "Résultats de séjours visibles", "Bouton RECHERCHER activé"],
+      "observations": [
+        "Le moteur expose des offres et des prix.",
+        "Le clic de recherche ajoute gtm.click et gtm.formSubmit.",
+        "GA4 page_view est envoyé sur le moteur ; aucune begin_checkout, add_to_cart ou purchase n'est observée.",
+        "Le moteur charge plusieurs conteneurs/propriétés et une propriété Universal Analytics historique : la déduplication doit être vérifiée."
+      ],
+      "ids_observed": ["GTM-5BNLTVRL", "G-387138825", "G-DYPBFGBXVK"],
+      "verdict": "Recherche fonctionnelle, conversion finale non prouvée ; le formSubmit ne vaut pas réservation."
+    },
+    {
+      "label": "Capfun",
+      "camping": "Armor Héol",
+      "home_url": "https://www.capfun.com/camping-france-pays_de_la_loire-armor_heol-FR.html",
+      "engine_url": "https://www.capfun.com/camping-france-pays_de_la_loire-armor_heol-FR.html#jereserve",
+      "steps": ["Page camping chargée", "CTA Prix et Réservation suivi", "Ancre de réservation atteinte"],
+      "observations": [
+        "Le clic remonte gtm.linkClick.",
+        "La page ne navigue pas vers un moteur externe pendant ce test.",
+        "Les hits observés sont page_view / Consent Mode ; aucun purchase ni begin_checkout."
+      ],
+      "ids_observed": ["G-VVQ5CM612N", "AW-1067145216"],
+      "verdict": "Clic mesuré mais étape de réservation et conversion finale non démontrées."
+    },
+    {
+      "label": "Homair",
+      "camping": "Domaine de Soleil Plage",
+      "home_url": "https://www.homair.com/camping/domaine-de-soleil-plage",
+      "engine_url": null,
+      "steps": ["Page camping chargée", "Bouton Tarifs et disponibilités activé"],
+      "observations": [
+        "La page reste sur le même document après le clic automatisé ; aucun résultat de disponibilités n'est rendu.",
+        "GA4 view_item est envoyé.",
+        "Une requête Google Ads /conversion/1037822916 est envoyée avant toute réservation avec en=conversion, bttype=purchase, value=0 et currency_code=EUR.",
+        "La requête est observée avec pscdl=denied : elle ne doit pas être interprétée comme une conversion e-commerce valide."
+      ],
+      "ids_observed": ["GTM-KL69MV5G", "G-1395N6N54W", "AW-1037822916"],
+      "verdict": "CRITIQUE : faux purchase / valeur nulle sur la page camping. Le tracking de commande n'est pas fiable."
+    },
+    {
+      "label": "MS Vacances",
+      "camping": "Camping Club Le Trianon",
+      "home_url": "https://www.ms-vacances.com/destinations/pays-de-la-loire/campings-vendee/camping-club-le-trianon/",
+      "engine_url": null,
+      "steps": ["Page camping chargée", "CTA Réserver un séjour activé"],
+      "observations": [
+        "Le clic remonte gtm.click et gtm.linkClick.",
+        "La page ne navigue pas vers une recherche de séjour pendant ce test.",
+        "Aucune conversion Ads, begin_checkout ou purchase observée."
+      ],
+      "verdict": "Interaction mesurée, tunnel de réservation non atteint."
+    },
+    {
+      "label": "Webcamp / Thelis",
+      "camping": "Le Clos des Capitelles",
+      "home_url": "https://www.campingclosdescapitelles.com/",
+      "engine_url": "https://thelisresa.webcamp.fr/",
+      "steps": ["Accueil chargé", "CTA RESERVER suivi", "Rechercher activé", "Page de résultats atteinte", "Détail d'une offre ouvert"],
+      "observations": [
+        "La page de résultats fournit des propositions pour une période de 7 jours.",
+        "Le moteur appelle ses services Price et add-to-cart, mais aucun événement métier n'est poussé dans le dataLayer.",
+        "Trois page_view GA4 sont observés sur le moteur, sans begin_checkout, add_to_cart ou purchase."
+      ],
+      "ids_observed": ["G-EF622EB6WZ", "G-PZJK1RVF6C", "G-DYPBFGBXVK"],
+      "verdict": "Résultats et détail d'offre accessibles ; tracking e-commerce absent ou non exposé jusqu'à cette étape."
+    },
+    {
+      "label": "Riviera Villages",
+      "camping": "La Toison d'Or",
+      "home_url": "https://www.riviera-villages.com/Toison-d-Or-Resort-Spa",
+      "engine_url": "https://booking.riviera-villages.com/rsl/clickbooking",
+      "steps": ["Accueil chargé", "CTA Réserver suivi", "Moteur de réservation chargé", "Recherche exécutée"],
+      "observations": [
+        "Le moteur affiche une absence de disponibilité pour la période de test.",
+        "GA4 remonte view_no_results.",
+        "Aucun begin_checkout ou purchase observé.",
+        "Consent Manager et Consent Mode sont présents sur le moteur."
+      ],
+      "ids_observed": ["GTM-KBQH547Z", "G-LZ5CGTF40K", "AW-986410032"],
+      "verdict": "Cas sans résultat correctement signalé ; conversion finale non testable sur cette période."
+    }
+  ],
+  "global_scan": {
+    "source": "Captures navigateur consolidées de 283 lignes.",
+    "rows_with_conversion_like_resources": 18,
+    "rows_with_explicit_zero_value_purchase": 14,
+    "explicit_zero_value_purchase_rows": [43, 51, 71, 103, 160, 198, 208, 224, 226, 231, 241, 246, 266, 278],
+    "main_pattern": "13 pages Homair partagent AW-1037822916 et déclenchent purchase à value=0 ; la ligne 51 Camping de La Clape présente le même motif avec un autre identifiant.",
+    "other_conversion_endpoints_without_purchase_payload": "4 lignes supplémentaires exposent un endpoint conversion/wcm ou view-through sans payload purchase exploitable ; elles nécessitent une vérification séparée et ne sont pas comptées comme commandes."
+  },
+  "required_next_steps_for_real_order_proof": [
+    "Obtenir un environnement de test ou une réservation annulable autorisée chez chaque moteur.",
+    "Tester le succès réel et l'échec réel ; un clic, un formSubmit ou une page de recherche ne suffit pas.",
+    "Exiger un événement purchase exactement une fois avec transaction_id non vide, value non nulle et currency.",
+    "Comparer le hit GA4, la conversion Google Ads et la commande du moteur, puis vérifier l'absence de doublon.",
+    "Corriger en priorité les 14 déclenchements purchase=value=0 avant toute utilisation des données pour optimiser les campagnes."
+  ]
+}
