@@ -298,7 +298,7 @@ def card(row: dict) -> str:
     status="Non vérifiable" if score is None else ("Suivi non démontré" if score < 2 else "Partiel" if score < 4 else "À valider")
     badge="badge-na" if score is None else "badge-low" if score < 2 else "badge-mid"
     search=slugify(f"{row['name']} {row['city']} {region_for(row['postal_code'])}")
-    return f'''<a class="camping-card" href="campings/{esc(row['slug'])}/" data-name="{esc(search)}" data-region="{esc(region_for(row['postal_code']))}" data-score="{esc('na' if score is None else int(score))}">
+    return f'''<a class="camping-card" href="campings/{esc(row['slug'])}/" data-name="{esc(search)}" data-region="{esc(region_for(row['postal_code']))}" data-score="{esc('na' if score is None else str(int(score)))}">
   <div class="card-top"><span class="card-index">#{int(row['row']):03d}</span><span class="stars" aria-label="5 étoiles">★★★★★</span></div>
   <div class="card-body"><h3>{esc(row['name'])}</h3><div class="location">📍 {esc(row['city'])} · {esc(row['postal_code'])} · {esc(region_for(row['postal_code']))}</div><p class="card-tool-line">{esc(' · '.join(x for x in [f'GTM {len(row["gtm_ids"])}' if row["gtm_ids"] else 'Sans GTM', f'GA4 {len(row["ga4_ids"])}' if row["ga4_ids"] else 'Sans GA4', 'CMP détectée' if row["consent_detected"] else 'CMP non détectée'] if x))}</p></div>
   <div class="card-footer"><div class="mini-score"><span class="score-number">{display}</span><span class="score-denom">/10</span><span class="score-label">{esc(status)}</span></div><span class="status-badge {badge}">Voir le rapport&nbsp;↗</span></div>
