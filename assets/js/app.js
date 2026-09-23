@@ -15,9 +15,9 @@
     if (selected === 'na') return score === 'na';
     if (score === 'na') return false;
     const value = Number(score);
-    if (selected === 'low') return value <= 3;
-    if (selected === 'mid') return value >= 4 && value <= 6;
-    if (selected === 'high') return value >= 7;
+    if (selected === 'low') return value <= 1;
+    if (selected === 'mid') return value >= 2 && value <= 3;
+    if (selected === 'high') return value >= 4;
     return true;
   }
 

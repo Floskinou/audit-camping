@@ -1,77 +1,60 @@
-# Audit Camping — observatoire du taggage des campings 5 étoiles
+# Audit Camping — suivi des réservations
 
-Site statique qui publie, pour chaque camping 5 étoiles du fichier source, un rapport public
-sur l'état de son plan de taggage : GTM, GA4, Google Ads, Meta Pixel, Bing UET, consentement
-RGPD et signaux de réservation. Chaque page se termine par un plan d'action priorisé et une
-offre d'accompagnement **Escale Ads à 499 €**.
+Site statique public : **https://floskinou.github.io/audit-camping/**
+Dépôt : `Floskinou/audit-camping` — GitHub Pages, branche `main`.
 
-## Contenu du dépôt
+Le site rassemble 283 fiches de campings 5 étoiles. Les rapports distinguent la présence des outils de mesure et les preuves réellement observées dans un parcours de réservation. L’offre Escale Ads affichée reste **499 €**.
+
+## Fichiers principaux
 
 | Chemin | Rôle |
 |---|---|
-| `index.html` | Page d'accueil : statistiques, filtres (recherche, région, score), 283 cartes |
-| `campings/<slug>/index.html` | Un rapport par camping (283 pages) |
-| `audit-input.json` | Les 283 lignes du CSV source, URLs d'origine préservées à l'identique |
-| `audit-final.json` | Résultat consolidé : une fiche par camping, seule source des pages |
-| `scripts/analyze_captures.py` | Transforme les captures navigateur en fiches d'audit |
-| `scripts/generate_site.py` | Génère l'accueil et les 283 pages |
-| `data/audits.json` | Copie lisible du résultat consolidé |
-| `journey-audit.json` / `journey-audit.md` | Parcours publics réels représentatifs jusqu'aux disponibilités, preuves réseau et anomalies de conversion |
-| `journey-all-results.json` / `journey-all-results.md` | Parcours navigateur exhaustif des 283 lignes CSV, sans réservation réelle |
-| `sitemap.xml`, `robots.txt` | Découverte du site |
+| `index.html` | Accueil, statistiques et filtres des 283 fiches |
+| `campings/<slug>/index.html` | Rapport public par camping |
+| `audit-input.json` | 283 lignes de la source d’audit |
+| `audit-final.json` | Résultats par camping et nouveaux scores de réservation |
+| `data/audits.json` | Données utilisées par le site statique |
+| `journey-rerun-20260923.json` / `.md` | Repassage navigateur et signaux du parcours, URLs expurgées de leurs paramètres |
+| `journey-all-results.json` / `.md` | Rapport de parcours historique du 2026-09-14, remplacé par le repassage du 2026-09-23 |
+| `scripts/analyze_captures.py` | Analyse initiale des captures de taggage |
+| `scripts/recompute_booking_scores.py` | Recalcul du score à partir du rapport de parcours expurgé |
+| `scripts/generate_site.py` | Génération de l’accueil et des 283 pages camping |
+| `sitemap.xml`, `robots.txt` | Découverte du site sur GitHub Pages |
 
-## Méthode
+## Repassage navigateur du 2026-09-23
 
-Une visite réelle par site, sans compte, sans réservation et sans paiement :
+- **283/283** campings couverts, un par un ; les onglets d’audit ont été fermés après chaque tentative.
+- Statuts : **266** pages accessibles, **8** réservations fermées, **8** accès bloqués et **1** parcours partiel repris manuellement (Les Truffières de Dordogne).
+- **120** entrées dans un moteur de réservation et **85** étapes de recherche/disponibilités/hébergements atteintes.
+- **113** sites : interaction de réservation ou de recherche mesurée ; **64** : hit GA4 observé sur une étape moteur.
+- **0** événement e-commerce spécifique observé (offre, panier ou checkout), **0** achat valide confirmé.
+- **17** campings ont émis **23** faux hits Google Ads `purchase` à 0 € ou sans transaction, avant toute commande.
+- Aucun vrai achat ou paiement n’a été effectué ; aucune donnée personnelle n’a été saisie. Les choix CMP sont restés à leur état par défaut.
 
-1. chargement de la page d'accueil publique dans un navigateur réel, avec un temps de
-   stabilisation puis un défilement complet, car de nombreux tags se chargent en différé ;
-2. relevé du DOM rendu, des ressources réellement chargées, du `dataLayer`, des variables de
-   consentement présentes à l'exécution et des **cookies écrits** ;
-3. récupération de la configuration publique de chaque conteneur GTM détecté
-   (`googletagmanager.com/gtm.js?id=…`) pour identifier les propriétés GA4 et les balises
-   Google Ads qu'il pilote ;
-4. contrôle de cohérence : un identifiant de conteneur n'est retenu que si sa configuration
-   publique a pu être récupérée.
-5. parcours réel non transactionnel de plusieurs familles de moteurs (CTA, recherche,
-   disponibilités, détail d'offre), avec contrôle des événements et requêtes sortantes.
-   Ce contrôle ne remplace pas une réservation de test autorisée.
+Les accès bloqués et réservations fermées ne prouvent pas qu’aucun tag interne n’existe. Le score reflète les preuves observables pendant le parcours sûr, pas une inspection des comptes Analytics ou du moteur de réservation.
 
-**Preuve par cookie.** Un identifiant présent dans le code ne prouve pas qu'un outil tourne.
-Inversement, un cookie écrit (`_ga`, `_gcl_au`, `_fbp`, `_uetvid`, `axeptio_*`, `didomi_*`…)
-prouve que l'outil s'est réellement exécuté. Les deux formes de preuve sont comptées et
-explicitement listées sur chaque page, dans la section « Preuves observées ».
+## Barème révisé (sur 10)
 
-**Score sur 10** — GTM 3 points, GA 2, Google Ads 2, consentement/CMP 2, Meta Pixel 1.
-Un point n'est accordé que pour un signal réellement observé, identifiant ou cookie.
+Le score mesure désormais le **suivi des réservations** et non la seule présence de balises :
 
-## Limites assumées
+- **2 points maximum** pour GTM, GA4, Google Ads et le consentement détectés (0,5 chacun) ;
+- **1 point** pour une interaction de réservation/recherche effectivement mesurée ;
+- **1 point** pour un hit analytics non limité au ping cookieless de consentement sur le moteur ;
+- **1 point** pour un événement d’étape e-commerce observé (disponibilité/offre/panier/checkout) ;
+- **5 points** seulement pour un achat confirmé avec `transaction_id`, valeur positive, `currency`, envoi GA4 et Google Ads une seule fois et sans doublon ;
+- **−3 points** en cas de faux `purchase` Google Ads à valeur nulle ou sans transaction avant toute commande.
 
-- Une seule visite par site, à une date donnée : un déploiement postérieur invalide le constat.
-- Aucune réservation n'a été effectuée : la remontée effective d'une conversion jusqu'à la
-  plateforme n'est pas vérifiée.
-- Un identifiant présent ne prouve pas qu'un tag se déclenche correctement.
-- Les identifiants GA4/Ads déduits de la configuration du conteneur GTM traduisent une
-  intention de mesure, pas un déclenchement observé ; les pages le précisent.
-- 13 adresses n'ont pas pu être chargées (domaine injoignable ou URL erronée) : elles sont
-  publiées comme **non vérifiables**, jamais comme « sans taggage ».
+Faute de réservation réelle ou de transaction de recette autorisée, les scores sont plafonnés à **5/10**. La moyenne de présence des outils de l’ancien barème était de **7,34/10** ; la moyenne du suivi de réservation est de **1,98/10** sur 271 fiches notées. Les 12 autres restent non vérifiables.
 
-## Régénérer
+## Régénérer le site
 
 ```bash
-python scripts/analyze_captures.py   # nécessite redo/raw-capture-*.json et redo/gtm/
-python scripts/generate_site.py      # écrit index.html et campings/
+python scripts/recompute_booking_scores.py
+python scripts/generate_site.py
 ```
 
-`generate_site.py` refuse de produire le site si le nombre de fiches ne correspond pas
-exactement aux lignes du CSV source.
+Le recalcul utilise le rapport de parcours expurgé versionné dans le dépôt ; les lots navigateur bruts restent ignorés afin de ne pas publier de paramètres de session/attribution. Pour refaire l’audit navigateur lui-même, il faut relancer un navigateur de test et produire un nouveau rapport avant le recalcul.
 
-## Déploiement
+## Déploiement et vérification
 
-Site statique : GitHub Pages, Netlify ou tout hébergeur de fichiers. Le fichier `.nojekyll`
-est présent pour GitHub Pages.
-
----
-
-Réalisé par [Escale Ads](mailto:contact@escale-ads.com) — accompagnement taggage, Consent Mode
-et conversions à 499 €.
+GitHub Pages sert le site depuis la racine de `main`. Après publication, vérifier l’accueil, une fiche camping, les fichiers CSS/JS et le sitemap avec un paramètre anti-cache ; exiger HTTP 200 et un marqueur de version unique avant de déclarer la mise à jour en ligne.
