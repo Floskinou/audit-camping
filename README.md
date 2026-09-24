@@ -62,4 +62,14 @@ Le recalcul utilise le rapport de parcours expurgé versionné dans le dépôt ;
 
 ## Déploiement et vérification
 
-GitHub Pages sert le site depuis la racine de `main`. Après publication, vérifier l’accueil, une fiche camping, les fichiers CSS/JS et le sitemap avec un paramètre anti-cache ; exiger HTTP 200 et un marqueur de version unique avant de déclarer la mise à jour en ligne.
+GitHub Pages sert le site depuis la racine de `main`. Après publication, vérifier l’accueil, une fiche camping, les fichiers CSS/JS et le sitemap avec un paramètre anti-cache ; exiger HTTP 200 et un marqueur de version unique avant de déclarer la mise en ligne.
+
+## Publication sur escale-ads.com/tracking-camping
+
+Le site est aussi publié en miroir sous `https://escale-ads.com/tracking-camping/` via `scripts/export_to_escale.py`, qui recopie l’accueil, les 283 fiches et les assets dans un clone de `Floskinou/Escale-Ads2026`, réécrit les liens internes en cibles fichier, injecte canonical + og:url sous la base publique, génère le sitemap de section (284 URL) et complète `robots.txt` + `sitemap.xml` racine — de façon idempotente et sans toucher aux autres fichiers de la cible.
+
+```bash
+python scripts/export_to_escale.py . <clone-Escale-Ads2026>
+```
+
+Tests : `tests/test_export_to_escale.py` ; smoke runtime du miroir : `tests/visual_smoke_subpath.cjs` (serveur local racine du clone cible sur le port 8767). La source de déploiement Netlify est la branche `main` de `Floskinou/Escale-Ads2026` ; après publication, exiger HTTP 200 + canonical exact sur la section, et contrôler le root sitemap ainsi que les deux lignes `Sitemap:` du `robots.txt`.
