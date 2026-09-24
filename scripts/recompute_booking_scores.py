@@ -14,6 +14,8 @@ from pathlib import Path
 from statistics import mean, median
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
+from booking_scoring import score_journey
+
 ROOT = Path(__file__).resolve().parents[1]
 DATE = "2026-09-23"
 INPUT = ROOT / "audit-input.json"
@@ -178,68 +180,38 @@ def false_ads_purchase(journey: dict) -> tuple[bool, int]:
 
 def summarize_journey(journey: dict, base: dict) -> dict:
     events = row_events(journey)
-    commerce = funnel_events(journey)
-    false_purchase, false_count = false_ads_purchase(journey)
-    tracked_click = click_tracked(journey)
-    engine_hit = engine_measurement(journey)
-    confirmed = bool(journey.get("purchase_confirmed"))
-    # The full five-point order component requires an actual confirmed provider
-    # success, a unique purchase, transaction_id, non-zero value, currency, and
-    # GA4 + Google Ads delivery. It is never inferred from a page or CTA click.
-    valid_order = False
-    stack = round(
-        0.5 * bool(base.get("gtm_ids"))
-        + 0.5 * bool(base.get("ga4_ids") or base.get("ga4_observed_on_page"))
-        + 0.5 * bool(base.get("google_ads_ids"))
-        + 0.5 * bool(base.get("consent_detected")), 1
-    )
-    click_points = 1.0 if tracked_click else 0.0
-    engine_points = 1.0 if engine_hit else 0.0
-    funnel_points = 1.0 if commerce else 0.0
-    purchase_points = 5.0 if confirmed and valid_order else 0.0
-    penalty = 3.0 if false_purchase else 0.0
-    total = round(max(0.0, min(10.0, stack + click_points + engine_points + funnel_points + purchase_points) - penalty), 1)
+    scored = score_journey(journey, base)
     status = str(journey.get("status", "error"))
     if status == "partial_manual":
-        verdict = "Parcours partiel : recherche et hébergements atteints, achat non testé."
+        verdict = "Parcours partiel : recherche et hébergements atteints ; achat non testé."
     elif status == "booking_closed":
-        verdict = "Réservation fermée lors du contrôle ; achat non vérifiable."
+        verdict = "Réservation fermée lors du contrôle ; achat non testé."
     elif status == "blocked":
-        verdict = "Accès au site ou au moteur bloqué ; suivi de réservation non vérifiable."
+        verdict = "Accès au site ou au moteur bloqué ; suivi non vérifiable."
     elif status == "error":
-        verdict = "Erreur technique ; suivi de réservation non vérifiable."
-    elif false_purchase:
-        verdict = "Faux signal Google Ads purchase à 0 € avant toute commande."
-    elif commerce:
-        verdict = "Événement(s) d’étape de réservation détecté(s), achat réel non confirmé."
-    elif tracked_click or engine_hit:
-        verdict = "Interaction ou page vue mesurée ; événement e-commerce/achat non observé."
+        verdict = "Erreur technique ; suivi non vérifiable."
+    elif scored["invalid_google_ads_purchase"]:
+        verdict = "Signal critique : purchase Ads déclenché sans achat confirmé."
+    elif scored["purchase_validation_status"] == "test_failed":
+        verdict = "Test transactionnel incomplet ou non conforme."
+    elif scored["purchase_confirmed"]:
+        verdict = "Achat de recette confirmé et transmis avec les champs requis."
+    elif scored["booking_funnel_events"]:
+        verdict = "Événement(s) d’étape observé(s) ; achat réel non testé."
+    elif scored["booking_interaction_tracked"] or scored["booking_engine_measurement_observed"]:
+        verdict = "Interaction ou mesure sur le moteur observée ; achat non testé."
     else:
-        verdict = "Aucun signal de réservation e-commerce observé pendant le parcours public."
-    return {
-        "score": total,
-        "breakdown": {
-            "stack_setup_2pts": stack,
-            "booking_interaction_1pt": click_points,
-            "booking_engine_measurement_1pt": engine_points,
-            "booking_funnel_event_1pt": funnel_points,
-            "confirmed_purchase_5pts": purchase_points,
-            "invalid_purchase_penalty": penalty,
-        },
+        verdict = "Aucun événement de réservation probant observé pendant ce parcours."
+    scored.update({
         "journey_status": status,
         "journey_verdict": verdict,
         "journey_events": events,
-        "booking_funnel_events": commerce,
-        "booking_interaction_tracked": tracked_click,
-        "booking_engine_measurement_observed": engine_hit,
-        "purchase_confirmed": False,
-        "invalid_google_ads_purchase": false_purchase,
-        "invalid_purchase_hit_count": false_count,
         "booking_entry_reached": any(x.get("stage") == "booking_entry" for x in journey.get("steps", [])),
         "availability_step_reached": any(x.get("stage") in {"search_result", "availability_search", "target_accommodations"} for x in journey.get("steps", [])),
         "reservation_made": False,
         "personal_data_entered": False,
-    }
+    })
+    return scored
 
 
 def public_record(journey: dict, scored: dict) -> dict:
@@ -253,11 +225,18 @@ def public_record(journey: dict, scored: dict) -> dict:
         "search_action": None,
         "steps": [],
         "score": scored["score"],
+        "score_model": scored["score_model"],
+        "score_status": scored["score_status"],
+        "score_coverage_pct": scored["score_coverage_pct"],
+        "score_assessed_points": scored["score_assessed_points"],
+        "score_obtained_points": scored["score_obtained_points"],
+        "score_breakdown": scored["score_breakdown"],
         "journey_verdict": scored["journey_verdict"],
         "booking_funnel_events": scored["booking_funnel_events"],
         "booking_interaction_tracked": scored["booking_interaction_tracked"],
         "booking_engine_measurement_observed": scored["booking_engine_measurement_observed"],
-        "purchase_confirmed": False,
+        "purchase_validation_status": scored["purchase_validation_status"],
+        "purchase_confirmed": scored["purchase_confirmed"],
         "invalid_google_ads_purchase": scored["invalid_google_ads_purchase"],
         "invalid_purchase_hit_count": scored["invalid_purchase_hit_count"],
         "reservation_made": False,
@@ -323,14 +302,18 @@ def main() -> None:
         row = by_audit[key]
         cleaned_links = [safe_booking_url(link) for link in row.get("booking_links", [])]
         row["booking_links"] = list(dict.fromkeys(link for link in cleaned_links if link))
-        old = row.get("tag_presence_score", row.get("score"))
-        if isinstance(old, (int, float)):
-            row["tag_presence_score"] = old
-            previous_scores.append(float(old))
+        prior_score = row.get("score")
+        if row.get("score_model") == "reservation_tracking_v2" and isinstance(prior_score, (int, float)):
+            row.setdefault("reservation_tracking_v2_score", prior_score)
+        legacy_score = row.get("tag_presence_score", prior_score)
+        if isinstance(legacy_score, (int, float)):
+            row["tag_presence_score"] = legacy_score
+            previous_scores.append(float(legacy_score))
         scored = summarize_journey(journey, row)
+        row.pop("breakdown", None)
         row.update(scored)
-        row["score"] = scored["score"] if row.get("status") != "unreachable" else None
-        row["score_model"] = "reservation_tracking_v2"
+        row["score"] = scored["score"]
+        row["score_model"] = scored["score_model"]
         row["score_observed_on"] = DATE
         if row["score"] is not None:
             new_scores.append(float(row["score"]))
@@ -338,20 +321,22 @@ def main() -> None:
         if scored["invalid_google_ads_purchase"]:
             false_rows.append({"row": key, "name": row.get("name", ""), "hits": scored["invalid_purchase_hit_count"]})
 
-        actions = list(row.get("priority_actions") or [])
+        actions = [action for action in list(row.get("priority_actions") or []) if not any(marker in action.lower() for marker in ("faux événement google ads purchase à 0 €", "réservation réelle remonte une seule fois"))]
         if scored["invalid_google_ads_purchase"]:
-            actions.insert(0, "Corriger immédiatement le faux événement Google Ads purchase à 0 € ; ne l’émettre qu’après un succès de réservation confirmé.")
+            actions.insert(0, "Corriger immédiatement le signal purchase prématuré/incomplet ; ne l’émettre qu’après un succès de réservation confirmé.")
         if not scored["booking_funnel_events"]:
             actions.append("Instrumenter le moteur sur les étapes disponibilité/offre/checkout et transmettre les événements au domaine d’analyse attendu.")
         actions.append("Valider une transaction de recette avec exactement un purchase portant transaction_id, value non nul et currency, transmis à GA4 et Google Ads.")
         row["priority_actions"] = list(dict.fromkeys(actions))[:5]
         issues = list(row.get("issues") or [])
         if scored["invalid_google_ads_purchase"]:
-            issues.insert(0, "Un hit Google Ads de type purchase avec valeur nulle a été émis avant toute commande.")
+            issues.insert(0, "Un signal Google Ads purchase a été émis sans preuve d’une transaction confirmée ou avec des champs incomplets.")
         if not scored["booking_funnel_events"]:
-            issues.append("Aucun événement e-commerce de réservation (offre, panier, début de checkout ou achat) n’a été observé pendant le parcours simulé.")
-        if not scored["purchase_confirmed"]:
-            issues.append("Aucun achat réel n’a été effectué ; la conversion purchase finale demeure non validée.")
+            issues.append("Aucun événement e-commerce d’étape (disponibilité, offre, panier ou checkout) n’a été observé pendant le parcours simulé.")
+        if scored["purchase_validation_status"] == "not_tested":
+            issues.append("Aucune transaction de recette autorisée n’a été testée ; le suivi de l’achat final reste non vérifié.")
+        elif scored["purchase_validation_status"] == "test_failed":
+            issues.append("Le test transactionnel de recette n’a pas satisfait tous les critères de validation.")
         row["issues"] = list(dict.fromkeys(issues))[:10]
         evidence = list(row.get("evidence") or [])
         evidence.append("Parcours de réservation public repassé le 2026-09-23 sans réservation ni saisie de données personnelles.")
@@ -370,18 +355,43 @@ def main() -> None:
     booking_entries = sum(any(s.get("stage") == "booking_entry" for s in j.get("steps", [])) for j in journeys)
     availability_steps = sum(any(s.get("stage") in {"search_result", "availability_search", "target_accommodations"} for s in j.get("steps", [])) for j in journeys)
     purchase_valid = sum(bool(x.get("purchase_confirmed")) for x in audit)
+    purchase_statuses = Counter(x.get("purchase_validation_status", "not_tested") for x in audit)
+    coverage_values = [int(x.get("score_coverage_pct", 0) or 0) for x in audit]
     report = {
         "audit_date": DATE,
         "scope": "Repassage en navigateur de chaque camping ; simulation limitée à l’entrée réservation et à la recherche/disponibilités lorsqu’elle était accessible.",
-        "safety": {"reservation_made": False, "personal_data_entered": False, "payment_or_confirmation": False, "purchase_confirmed": False, "consent_granted_by_automation": False},
-        "coverage": {"source_rows": 283, "unique_rows": len(public_rows), "status_counts": dict(sorted(statuses.items())), "booking_entry_reached": booking_entries, "availability_or_accommodation_step_reached": availability_steps},
-        "tracking": {"booking_click_or_search_interaction_measured": click_count, "booking_engine_ga4_measurement_hit_observed": engine_hit_count, "sites_with_ecommerce_funnel_events": funnel_count, "purchase_confirmed": purchase_valid, "false_google_ads_purchase_sites": len(false_rows), "false_google_ads_purchase_hits": sum(x["hits"] for x in false_rows), "false_purchase_sites": false_rows},
-        "scoring": {"model": "reservation_tracking_v2", "components": {"stack_setup": "0.5 each for GTM, GA4, Google Ads, and detectable consent management (max 2)", "measured_booking_interaction": "1 point", "analytics_hit_on_booking_step": "1 point; Consent Mode ccm/collect-only page_view does not qualify", "booking_funnel_event": "1 point for a specific availability, offer, cart, or checkout event", "confirmed_order": "5 points only for a real confirmed purchase with non-empty transaction_id, non-zero value, currency, GA4 + Google Ads, and no duplicate", "false_purchase_penalty": "minus 3 points when purchase fires before an order with zero/missing value or transaction_id"}, "average_previous_tag_presence_score": round(mean(previous_scores), 2) if previous_scores else None, "average_new_booking_score": round(mean(valid), 2) if valid else None, "median_new_booking_score": round(median(valid), 2) if valid else None, "scored_rows": len(valid), "maximum_without_confirmed_order": 5},
+        "safety": {"reservation_made": False, "personal_data_entered": False, "payment_or_confirmation": False, "real_purchase_confirmed": False, "consent_granted_by_automation": False},
+        "coverage": {"source_rows": 283, "unique_rows": len(public_rows), "status_counts": dict(sorted(statuses.items())), "booking_entry_reached": booking_entries, "availability_or_accommodation_step_reached": availability_steps, "score_coverage_mean_pct": round(mean(coverage_values), 1) if coverage_values else 0},
+        "tracking": {"booking_click_or_search_interaction_measured": click_count, "booking_engine_ga4_measurement_hit_observed": engine_hit_count, "sites_with_ecommerce_funnel_events": funnel_count, "purchase_confirmed": purchase_valid, "purchase_validation_status_counts": dict(sorted(purchase_statuses.items())), "false_google_ads_purchase_sites": len(false_rows), "false_google_ads_purchase_hits": sum(x["hits"] for x in false_rows), "false_purchase_sites": false_rows},
+        "scoring": {
+            "model": "reservation_tracking_v3",
+            "name": "suivi observable pré-transaction",
+            "formula": "10 × points obtenus / points évaluables ; les critères non atteints sont exclus du dénominateur. Afficher la couverture séparément ; aucun score sous 5/10 points évaluables.",
+            "components": {
+                "measurement_setup": "2 pts : hit GA4 réel sur le site (1), outils identifiés (0,5 maximum) et CMP détectée (0,5 ; comportement CMP non testé)",
+                "booking_interaction": "2 pts : événement d’interaction vu dans la dataLayer (1) et hit GA4 nommé sur l’étape CTA (1)",
+                "booking_engine": "2 pts : hit GA4 non cookieless sur le moteur (1) et linker ou événement réservation nommé observé (1)",
+                "availability_event": "1 pt si l’étape disponibilité/recherche est atteinte et l’événement correspondant est mesuré",
+                "offer_event": "1 pt si la liste d’offres est atteinte et view_item/select_item (ou équivalent) est mesuré",
+                "event_name_quality": "1 pt lorsque des événements réservation sont observés et leurs noms respectent le format GA4",
+                "single_delivery_observed": "1 pt lorsque les hits GA4 de réservation observés ne sont pas dupliqués dans une même étape",
+            },
+            "purchase_validation": "Statut séparé : not_tested, validated, test_failed ou defect_observed. Un achat n’est validé qu’avec contexte de recette autorisé, succès confirmé, un seul achat, hit GA4 capturé, transaction_id, valeur positive, devise, GA4 + Ads et absence de doublon.",
+            "critical_false_purchase": "Alerte critique séparée, sans pénalité forfaitaire arbitraire ; ne valide jamais un achat.",
+            "minimum_assessed_points": 5,
+            "average_previous_tag_presence_score": round(mean(previous_scores), 2) if previous_scores else None,
+            "average_v2_score": round(mean([float(x["reservation_tracking_v2_score"]) for x in audit if isinstance(x.get("reservation_tracking_v2_score"), (int, float))]), 2) if any(isinstance(x.get("reservation_tracking_v2_score"), (int, float)) for x in audit) else None,
+            "average_pretransaction_score": round(mean(valid), 2) if valid else None,
+            "median_pretransaction_score": round(median(valid), 2) if valid else None,
+            "scored_rows": len(valid),
+            "insufficient_coverage_rows": sum(x.get("score_status") == "insufficient_coverage" for x in audit),
+        },
         "results": public_rows,
     }
     AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     REPORT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    format_fr = lambda value: f"{value:.2f}".replace(".", ",")
     md = [
         "# Repassage des parcours de réservation — campings 5 étoiles",
         "", f"Date du contrôle : **{DATE}**", "",
@@ -403,19 +413,21 @@ def main() -> None:
         f"- Faux hits Google Ads `purchase` à valeur nulle/incomplète avant toute commande : **{len(false_rows)} sites**, **{sum(x['hits'] for x in false_rows)} hits**. Aucun n’est compté comme vente.",
         "", "### Campings avec faux purchase Google Ads observé", "",
         ", ".join(f"{x['row']} — {x['name']} ({x['hits']} hit{'s' if x['hits'] != 1 else ''})" for x in false_rows) or "Aucun.",
-        "", "## Nouveau système de notation", "",
-        "Le score public mesure maintenant le **suivi de réservation observé**, au lieu de récompenser surtout la présence d’identifiants :",
-        "- Outils de base détectés (GTM, GA4, Google Ads, consentement) : **2 points maximum**.",
-        "- Interaction de réservation mesurée : **1 point**.",
-        "- Hit analytics non limité au ping cookieless de consentement sur le moteur : **1 point**.",
-        "- Événement d’étape e-commerce réellement observé (disponibilité/offre/panier/checkout) : **1 point**.",
-        "- Achat confirmé : **5 points**, uniquement avec succès réel, `transaction_id`, `value` non nul, `currency`, GA4 + Google Ads et absence de doublon.",
-        "- Faux `purchase` à 0 € ou sans identifiant de transaction avant une commande : **−3 points**.",
-        f"- Moyenne de l’ancien score de présence : **{mean(previous_scores):.2f}/10** ; nouvelle moyenne de réservation : **{mean(valid):.2f}/10** sur **{len(valid)}** pages scorées.".replace('.', ','),
-        "- En l’absence de transaction réelle confirmée, le nouveau score est plafonné à **5/10**. Les résultats de parcours bloqués ou fermés restent signalés comme non vérifiables.",
+        "", "## Barème v3", "",
+        "Le score /10 porte sur le **suivi observable avant transaction** ; la validation du purchase est un statut distinct.",
+        "- Base de mesure : **2 pts** (hit GA4 réel, présence limitée des outils et CMP détectée ; le comportement CMP reste non testé).",
+        "- Interaction réservation : **2 pts** (signal d’interaction dans la dataLayer et hit GA4 nommé sur l’étape CTA).",
+        "- Moteur de réservation : **2 pts** (hit GA4 hors ping cookieless et signal de continuité/linker ou événement de réservation).",
+        "- Disponibilités et offres : **2 pts** (1 point par étape atteinte et événement correspondant observé).",
+        "- Qualité des événements : **2 pts** (noms conformes aux règles GA4 et absence de doublon parmi les hits de réservation observés dans une même étape).",
+        "- Formule : 10 × points obtenus / points évaluables ; les étapes non atteintes sont exclues du dénominateur. Couverture affichée séparément ; aucun score si moins de 5 points sont évaluables.",
+        "- Achat : `not_tested`, `validated`, `test_failed` ou `defect_observed`. Il ne contribue pas au score pré-transaction ; sa validation exige une recette autorisée, succès confirmé, hit GA4 capturé, un seul purchase, transaction_id, valeur positive, devise, envoi Google Ads et absence de doublon.",
+        "- Un faux `purchase` prématuré/incomplet est une alerte critique distincte, sans soustraction forfaitaire arbitraire.",
+        f"- Scores calculés : **{len(valid)}** ; couverture insuffisante : **{sum(x.get('score_status') == 'insufficient_coverage' for x in audit)}** ; moyenne pré-transaction : **{format_fr(mean(valid))}/10**." if valid else "- Aucun score n’atteint le seuil minimal de couverture.",
+        f"- Moyenne v2 : **{format_fr(mean([float(x['reservation_tracking_v2_score']) for x in audit if isinstance(x.get('reservation_tracking_v2_score'), (int, float))]))}/10** ; elle n’est pas directement comparable au barème v3." if any(isinstance(x.get("reservation_tracking_v2_score"), (int, float)) for x in audit) else "- Aucun historique de score v2 conservé.",
         "", "## Recommandation", "",
-        "Avant d’optimiser les campagnes sur les réservations, corriger tout `purchase` prématuré à 0 €, instrumenter les étapes du moteur externe, puis valider une transaction de recette (ou sandbox) avec un `purchase` unique et une valeur, devise et transaction réellement renseignées.",
-        "", "Le détail par camping est dans `journey-rerun-20260923.json` ; les scores recalculés sont également publiés dans `data/audits.json`.", "",
+        "Corriger tout signal purchase prématuré, instrumenter les étapes disponibilité/offre/checkout, puis valider le purchase en sandbox ou recette explicitement autorisée. Aucun achat réel n’a été réalisé pendant ce repassage.",
+        "", "Le détail par camping est dans `journey-rerun-20260923.json` ; les scores recalculés sont publiés dans `data/audits.json`.", "",
     ]
     REPORT_MD.write_text("\n".join(md), encoding="utf-8")
     print(json.dumps({"journeys": len(public_rows), "score_rows": len(valid), "status_counts": dict(statuses), "booking_entries": booking_entries, "availability_steps": availability_steps, "click_measured": click_count, "engine_hits": engine_hit_count, "ecommerce_sites": funnel_count, "valid_purchase": purchase_valid, "false_purchase_sites": len(false_rows), "old_avg": round(mean(previous_scores), 2), "new_avg": round(mean(valid), 2), "files": [str(REPORT_JSON), str(REPORT_MD), str(AUDIT)]}, ensure_ascii=False))

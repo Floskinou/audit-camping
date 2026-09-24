@@ -17,7 +17,9 @@ Le site rassemble 283 fiches de campings 5 étoiles. Les rapports distinguent la
 | `journey-rerun-20260923.json` / `.md` | Repassage navigateur et signaux du parcours, URLs expurgées de leurs paramètres |
 | `journey-all-results.json` / `.md` | Rapport de parcours historique du 2026-09-14, remplacé par le repassage du 2026-09-23 |
 | `scripts/analyze_captures.py` | Analyse initiale des captures de taggage |
-| `scripts/recompute_booking_scores.py` | Recalcul du score à partir du rapport de parcours expurgé |
+| `scripts/recompute_booking_scores.py` | Recalcul des résultats de parcours et production du rapport public |
+| `scripts/booking_scoring.py` | Barème v3 : score pré-transaction, couverture et validation d’achat séparée |
+| `tests/test_booking_scoring.py` | Tests unitaires des seuils, de la couverture et des preuves d’achat |
 | `scripts/generate_site.py` | Génération de l’accueil et des 283 pages camping |
 | `sitemap.xml`, `robots.txt` | Découverte du site sur GitHub Pages |
 
@@ -33,18 +35,21 @@ Le site rassemble 283 fiches de campings 5 étoiles. Les rapports distinguent la
 
 Les accès bloqués et réservations fermées ne prouvent pas qu’aucun tag interne n’existe. Le score reflète les preuves observables pendant le parcours sûr, pas une inspection des comptes Analytics ou du moteur de réservation.
 
-## Barème révisé (sur 10)
+## Barème v3
 
-Le score mesure désormais le **suivi des réservations** et non la seule présence de balises :
+Le score /10 mesure le **suivi observable avant transaction**. La validation d’un achat est affichée à part : `not_tested`, `validated`, `test_failed` ou `defect_observed`.
 
-- **2 points maximum** pour GTM, GA4, Google Ads et le consentement détectés (0,5 chacun) ;
-- **1 point** pour une interaction de réservation/recherche effectivement mesurée ;
-- **1 point** pour un hit analytics non limité au ping cookieless de consentement sur le moteur ;
-- **1 point** pour un événement d’étape e-commerce observé (disponibilité/offre/panier/checkout) ;
-- **5 points** seulement pour un achat confirmé avec `transaction_id`, valeur positive, `currency`, envoi GA4 et Google Ads une seule fois et sans doublon ;
-- **−3 points** en cas de faux `purchase` Google Ads à valeur nulle ou sans transaction avant toute commande.
+- **2 points — base de mesure** : hit GA4 réel sur le site, présence limitée d’identifiants d’outils et CMP détectée. Les identifiants seuls ne suffisent pas ; le comportement CMP n’a pas été testé dans les deux états.
+- **2 points — interaction** : signal d’interaction observé dans la dataLayer et hit GA4 nommé sur le CTA.
+- **2 points — moteur** : hit GA4 non cookieless et signal de continuité/linker ou événement de réservation nommé.
+- **2 points — étapes** : un point pour un événement de disponibilité et un point pour un événement d’offre, uniquement si l’étape correspondante a été atteinte.
+- **2 points — qualité des événements** : conformité des noms GA4 et absence de doublon parmi les hits de réservation observés dans une même étape.
 
-Faute de réservation réelle ou de transaction de recette autorisée, les scores sont plafonnés à **5/10**. La moyenne de présence des outils de l’ancien barème était de **7,34/10** ; la moyenne du suivi de réservation est de **1,98/10** sur 271 fiches notées. Les 12 autres restent non vérifiables.
+Le score est normalisé sur les seuls critères effectivement évaluables. Les étapes non atteintes ne sont pas assimilées à un échec ; la couverture est affichée séparément. Aucun score numérique n’est publié si moins de **5 points sur 10** ont pu être évalués. Un signal `purchase` prématuré/incomplet est une alerte critique distincte, sans pénalité forfaitaire qui brouillerait le score pré-transaction.
+
+Un achat n’est marqué **validé** qu’après un succès dans un environnement de recette autorisé, avec un unique `purchase`, un hit GA4 capturé, `transaction_id`, valeur positive, devise, livraison GA4 et Google Ads, et absence de doublon. Une simulation qui s’arrête avant ce succès laisse le statut `not_tested` ; elle ne valide ni ne réfute à elle seule la configuration interne.
+
+Les scores v2 (champ `reservation_tracking_v2_score`) et v3 ne sont pas directement comparables : ils ne mesurent pas la même chose. Les résultats v3 et la couverture calculée sont consignés dans `audit-final.json` et dans le rapport de parcours.
 
 ## Régénérer le site
 
