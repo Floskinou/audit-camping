@@ -25,6 +25,32 @@ from pathlib import Path, PurePosixPath
 ESCALE_ORIGIN = "https://escale-ads.com"
 SECTION_PATH = "/tracking-camping"
 SECTION_DIR = "tracking-camping"
+META_PIXEL_ID = "1169155973124323"
+
+# Le miroir est la destination des publicités Meta (ad set optimisé sur le
+# pixel Lead) : l'export injecte le pixel — le dépôt source GitHub Pages, lui,
+# n'en porte pas. Le clic sur un CTA Calendly émet Lead (signal de
+# conversion attendu par l'ad set) ; la fiche émet ViewContent.
+META_PIXEL_SNIPPET = """<!-- Meta Pixel — injecté par scripts/export_to_escale.py -->
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=__PIXEL_ID__&ev=PageView&noscript=1"/></noscript>
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/fr_FR/fbevents.js');
+  fbq('init', '__PIXEL_ID__');
+  fbq('track', 'PageView');
+  document.addEventListener('click', function (event) {
+    var link = event.target && event.target.closest ? event.target.closest('a[href*="calendly.com"]') : null;
+    if (link && !window.__escaleLeadTracked) {
+      window.__escaleLeadTracked = true;
+      fbq('track', 'Lead');
+    }
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    if (document.querySelector('.camping-detail')) {
+      fbq('track', 'ViewContent', { content_name: document.title });
+    }
+  });
+</script>
+"""
 ASSETS = (
     "assets/css/style.css",
     "assets/css/redesign.css",
@@ -76,6 +102,15 @@ def _inject_head(html: str, canonical: str, icon: bool) -> tuple[str, bool]:
     prefix = _icon_prefix_from_canonical(canonical)
     block = "\n".join(line.format(prefix=prefix) for line in injected) + "\n</head>"
     return html.replace("</head>", block, 1), True
+
+
+def _inject_meta_pixel(html: str) -> str:
+    """Injecte le pixel Meta dans le <head> du miroir (une seule fois)."""
+    if "fbevents.js" in html:
+        return html
+    snippet = META_PIXEL_SNIPPET.replace("__PIXEL_ID__", META_PIXEL_ID)
+    block = "  " + snippet.replace("\n", "\n  ").rstrip() + "\n</head>"
+    return html.replace("</head>", block, 1)
 
 
 def _icon_prefix_from_canonical(canonical: str) -> str:
@@ -186,6 +221,7 @@ def export(source: Path, target: Path) -> dict:
         html = _rewrite_internal_links(html)
         html, added = _inject_head(html, _canonical_for(relative), icon)
         canonicals_added += int(added)
+        html = _inject_meta_pixel(html)
         destination = target / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes(html.encode("utf-8"))
